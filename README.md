@@ -1,4 +1,11 @@
-
+A. [Momentum Trading](#A)
+B. [Mean Reversion Trading](#B)
+C. [Spread Trading](#C)
+D. [Arbitrage Trading](#D)
+E. [Quantitative Trading](#E)
+F. [Machine Learning Trading](#F)
+G. [High-Frequency Trading](#G)
+H. [Cryto Currency Market](#H)
 
 ---
 
@@ -33,7 +40,7 @@ A. Momentum Trading
 
 ---
 
-<!-- #region Momentum Trading -->
+<!-- #region Mean Reversion Trading -->
 
 <a name="B"></a>
 B. Mean Reversion Trading
@@ -43,48 +50,40 @@ B. Mean Reversion Trading
 
 ---
 
-<a name="A"></a>
-B. Mean Reversion Trading
-<!--Mean Reversion Trading-->
-<br>
+<!-- #region Spread Trading -->
+
+<a name="C"></a>
+C. Spread Trading
 
 
-<!--Mean Reversion Trading-->
-</details>
-
----
-
-<details>
-<summary>C. Grid Trading</summary>
-<!--Grid Trading-->
-<br>
-
-<!--Grid Trading-->
-</details>
+<!-- #endregion -->
 
 ---
 
-<details>
-<summary>D. Arbitrage Trading</summary>
-<!--Arbitrage Trading-->
+<!-- #region Arbitrage Trading -->
 
-<!--Arbitrage Trading-->
-</details>
+<a name="D"></a>
+D. Arbitrage Trading
 
----
 
-<details>
-<summary>E. Quantitative Trading</summary>
-<!--Quantitative Trading-->
-<br>
-
-<!--Quantitative Trading-->
-</details>
+<!-- #endregion -->
 
 ---
 
-F. Machine Learning Strategies
-<!--Machine Learning Strategies-->
+<!-- #region Quantitative Trading -->
+
+<a name="E"></a>
+E. Quantitative Trading
+
+
+<!-- #endregion -->
+
+---
+
+<!-- #region Machine Learning Trading -->
+
+<a name="F"></a>
+F. Machine Learning Trading
 
 <!-- #region F1 -->
 
@@ -106,8 +105,6 @@ F. Machine Learning Strategies
 
 <!-- #region F2 -->
 
-<!-- #region F3 -->
-
 <details>
 <summary>2. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary>
 
@@ -126,57 +123,24 @@ F. Machine Learning Strategies
 
 <!-- #endregion -->
 
-<!--Machine Learning Strategies-->
+---
 
+<!-- #region High-Frequency Trading -->
+
+<a name="G"></a>
+G. High-Frequency Trading
+
+
+<!-- #endregion -->
 
 ---
 
-<details>
-<summary>G. High-Frequency Trading</summary>
-<!--High-Frequency Trading-->
-<br>
+<!-- #region Cryto Currency Market -->
 
-<!--High-Frequency Trading-->
-</details>
+<a name="H"></a>
+H. Cryto Currency Market
 
----
-
-<details>
-<summary>H. Spread Trading</summary>
-<!--Spread Trading-->
-<br>
-
-<!--Spread Trading-->
-</details>
-
----
-
-<details>
-<summary>I. Cross-Currency Strategies</summary>
-<!--Cross-Currency Strategies-->
-<br>
-
-<!--Cross-Currency Strategies-->
-</details>
-
----
-
-<details>
-<summary>J. Cross-Exchange Strategies</summary>
-<!--Cross-Exchange Strategies-->
-<br>
-
-<!--Cross-Exchange Strategies-->
-</details>
-
----
-
-<details>
-<summary>K. Cryto Currency Market</summary>
-<!--Market Analysis-->
-<br>
-
-<!-- #region K1 -->
+<!-- #region H1 -->
 
 <details>
 <summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
@@ -188,7 +152,7 @@ F. Machine Learning Strategies
 
 <!-- #endregion -->
 
-<!-- #region K2 -->
+<!-- #region H2 -->
 
 <details>
 <summary>2. Cryptocurrencies: from characteristics to behaviours</summary>
@@ -200,8 +164,7 @@ F. Machine Learning Strategies
 
 <!-- #endregion -->
 
-<!--Market Analysis-->
-</details>
+---
 
 <!-- #region X0 -->
 
