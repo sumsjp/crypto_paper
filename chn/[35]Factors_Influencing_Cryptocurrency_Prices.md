@@ -31,7 +31,6 @@
 本研究採用 **自回歸分佈式滯後模型（Autoregressive Distributed Lag, ARDL）** 來分析影響加密貨幣價格的因素，並結合 **誤差修正模型（Error Correction Model, ECM）** 以探討短期與長期影響因素。研究方法的詳細步驟如下：
     
 1. **數據收集**
-
 - 研究對象：比特幣（Bitcoin）、以太坊（Ethereum）、達世幣（Dash）、萊特幣（Litecoin）、門羅幣（Monero）。
 - 研究期間：2010-2018 年，每週數據。
 - 數據來源：
@@ -41,42 +40,23 @@
     - **加密貨幣吸引力**：Google Trends（搜尋趨勢）
 
 2. **變數選擇**
-
-- 被解釋變數（依變數）
-
-    ：
-
+- 被解釋變數（依變數）：
     - 加密貨幣價格（Bitcoin, Ethereum, Dash, Litecoin, Monero）。
 
-- 解釋變數（自變數）
-
-    ：
-
-    - 市場因素
-
-    ：
-
-    - **市場回報率（Market Beta, MARP）**：Crypto 50 指數（前 50 大加密貨幣的市值加權價格）。
-    - **交易量（Trading Volume, MARV）**：加密貨幣市場的總交易量。
-    - **市場波動性（Volatility, MARS）**：Crypto 50 指數的價格波動率。
-
-    - 吸引力因素
-
-    ：
-
-    - **Google Trends 搜尋趨勢（Attractiveness, ATR）**，作為市場關注度指標。
-
-    - 控制變數（宏觀經濟因素）
-
-    ：
-
-    - **標準普爾 500 指數（SP500, SPP）**：用來衡量股票市場與加密貨幣的關聯性。
-    - **歐元兌美元匯率（EUR/USD, EURP）**。
-    - **黃金價格（Gold Price, GOLP）**。
-    - **美國利率（Interest Rate, INT）**。
+- 解釋變數（自變數）：
+    - 市場因素：
+      - **市場回報率（Market Beta, MARP）**：Crypto 50 指數（前 50 大加密貨幣的市值加權價格）。
+      - **交易量（Trading Volume, MARV）**：加密貨幣市場的總交易量。
+      - **市場波動性（Volatility, MARS）**：Crypto 50 指數的價格波動率。
+    - 吸引力因素：
+      - **Google Trends 搜尋趨勢（Attractiveness, ATR）**，作為市場關注度指標。
+    - 控制變數（宏觀經濟因素）：
+      - **標準普爾 500 指數（SP500, SPP）**：用來衡量股票市場與加密貨幣的關聯性。
+      - **歐元兌美元匯率（EUR/USD, EURP）**。
+      - **黃金價格（Gold Price, GOLP）**。
+      - **美國利率（Interest Rate, INT）**。
 
 3. **建立 Crypto 50 指數**
-
 - 依據市場市值權重，計算前 50 大加密貨幣的綜合價格、交易量與波動性，以代表整體加密貨幣市場狀況。
 - 公式：
     - Crypto 50 指數價格： $CRX50=\sum_{i=1}^{50} \left(\frac{MC_i}{MC_{CRX50}} \times P_i\right)$
@@ -84,27 +64,18 @@
     - 波動性： $MARS=ln(\frac{P_h}{P_l})$
 
 4. **單根檢定（Stationarity Test）**
-
 - 使用 **增強型迪基-福勒（ADF）單根檢定**，確保變數為 I(0) 或 I(1)，以判定是否適合使用 ARDL 模型。
 
 5. **ARDL 共整合檢定**
-
-- 透過
-
-    ARDL Bound Test
-
-    來檢驗變數間是否存在長期共整合關係：
-
+- 透過 ARDL Bound Test 來檢驗變數間是否存在長期共整合關係：
     - **短期影響**：檢視變數的即時變化對加密貨幣價格的影響。
     - **長期影響**：估算變數對價格的長期影響，計算長期乘數（Long-run multipliers）。
 
 6. **誤差修正模型（ECM）**
-
 - 建立 ECM 以測試短期內價格是否回歸長期均衡：
     - 若 ECM 係數顯著且為負數，表示市場價格在短期內會回復至長期均衡。
 
 7. **穩定性與誤差檢測**
-
 - **自相關檢定**（Breusch-Godfrey LM Test）。
 - **異質變異檢定**（Breusch-Pagan-Godfrey Test）。
 - **穩定性檢測**（CUSUM Test）。
