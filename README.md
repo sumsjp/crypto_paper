@@ -22,7 +22,7 @@
 </details>
 
 <!--Momentum Trading-->
-</details>
+</div></details>
 
 <details>
 <summary>B. Market Analysis</summary><div style="margin-left: 20px;">
@@ -36,4 +36,4 @@
 </details>
 
 <!--Market Analysis-->
-</details>
+</div></details>
