@@ -72,9 +72,7 @@
 - 依據市場市值權重，計算前 50 大加密貨幣的綜合價格、交易量與波動性，以代表整體加密貨幣市場狀況。
 - 公式：
     - Crypto 50 指數價格： 
-      $$
-      CRX50=∑i=150(MCiMCCRX50×Pi)CRX50 = \sum_{i=1}^{50} \left(\frac{MC_i}{MC_{CRX50}} \times P_i\right)
-      $$
+      $CRX50=∑i=150(MCiMCCRX50×Pi)CRX50 = \sum_{i=1}^{50} \left(\frac{MC_i}{MC_{CRX50}} \times P_i\right)$
       
     - 交易量： $MARV=∑i=150VOLiMARV = \sum_{i=1}^{50} VOL_i$
     - 波動性： $MARS=PhPlMARS = \frac{P_h}{P_l}$
