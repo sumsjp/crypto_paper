@@ -170,7 +170,7 @@
 ---
 
 <details>
-<summary>K. Market Analysis</summary>
+<summary>K. Cryto Currency Market</summary>
 <!--Market Analysis-->
 <br>
 
