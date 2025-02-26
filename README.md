@@ -1,7 +1,7 @@
 [TOC]
 
 <details>
-<summary>Momentum Trading</summary>
+<summary>A. Momentum Trading</summary>
 
 <details>
 <summary>1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
@@ -25,7 +25,7 @@
 </details>
 
 <details>
-<summary>Market Analysis</summary>
+<summary>B. Market Analysis</summary>
 
 <details>
 <summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
