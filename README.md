@@ -3,6 +3,8 @@
 <!--Momentum Trading-->
 <br>
 
+<!-- #region A1 -->
+
 <details>
 <summary>1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
 
@@ -21,6 +23,8 @@
 [[中文]](chn/[01]Time-Series_and_Cross-Sectional_Momentum.md) [[英文]](eng/[01]ssrn-4675565.pdf)
 </details>
 
+<!-- #endregion -->
+
 <!--Momentum Trading-->
 </details>
 
@@ -31,11 +35,15 @@
 <!--Mean Reversion Trading-->
 <br>
 
+<!-- #region X0 -->
+
 <details>
 <summary></summary>
 
 [[中文]](chn) [[英文]](eng)
 </details>
+
+<!-- #endregion -->
 
 <!--Mean Reversion Trading-->
 </details>
@@ -76,6 +84,8 @@
 <!--Machine Learning Strategies-->
 <br>
 
+<!-- #region F1 -->
+
 <details>
 <summary>1. Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
 
@@ -90,28 +100,29 @@
 [[中文]](chn/[02]Momentum_Transformer.md) [[英文]](eng/[02]2112.08534v3.pdf)
 </details>
 
+<!-- #endregion -->
+
+<!-- #region F2 -->
+
+<!-- #region F3 -->
+
 <details>
-<summary>2. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity
-</summary>
+<summary>2. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary>
 
-現代跨橫斷面交易策略中，結合了**深度學習 (Deep Learning, DL)** 的先進神經網絡模型在歷史數據充足的成熟資產上能夠超越傳統方法。然而，當應用於交易數據有限的標的時，這些模型容易**過擬合 (overfitting)**，導致績效下降。
+加密貨幣是一種基於密碼學的數字資產，其價格極端波動，全球每日交易量約達 **700 億美元**。由於市場的高波動性，使得加密貨幣交易變得極具挑戰性。本研究探討**強化學習（Reinforcement Learning, RL）**是否能夠提升加密貨幣演算法交易的決策能力，並與傳統交易方法進行比較。  
 
-本研究提出了一種新方法——**Fused Encoder Networks (FEN)**，這是一種混合的參數共享**遷移學習排名模型 (Transfer Ranking Model)**。該模型利用 **編碼器-注意力模塊 (encoder-attention module)** 來融合從大數據集（源數據）中提取的信息，以及針對目標數據集的專用模塊，以提升模型的**泛化能力 (generalizability)**。
+為解決此問題，我們將**強化學習與統計套利交易技術——配對交易（Pair Trading）**相結合，該技術利用統計相關資產間的價格差異進行交易。我們構建了**RL 交易環境**，並訓練 RL 代理（agent）來決定何時及如何交易加密貨幣對。我們針對強化學習開發了**新的獎勵設計（reward shaping）**及**觀察/動作空間（observation/action spaces）**，以提升交易決策的智能化程度。  
 
-**方法與創新**：  
-- 採用 **自注意力機制 (self-attention mechanism)**，允許模型在訓練和推理過程中考慮不同資產間的相互作用。
-- 透過混合學習策略，在源數據集（例如外匯數據）上訓練部分模型，並與針對目標數據（例如加密貨幣）訓練的模組相結合，從而降低過擬合風險。
+在實驗中，我們利用**BTC-GBP 和 BTC-EUR** 交易對的價格數據（時間間隔為 **1 分鐘，n = 263,520**）進行測試。結果顯示，**傳統的非 RL 配對交易技術年化利潤為 8.33%**，而**基於 RL 的配對交易技術年化利潤範圍為 9.94% 至 31.53%**，具體收益率取決於所選用的 RL 演算法。  
 
-**實驗與結果**：  
-- 研究將 FEN 應用於 **前十大加密貨幣的動能交易策略**（基於市值排名），並與現有最先進的基準方法進行比較。  
-- 在大多數評估指標上，FEN **優於其他方法**，特別是在風險調整後回報方面，如 **Sharpe Ratio** 顯著提高。  
-- 即使考慮**高交易成本**（如加密貨幣市場的手續費與滑點），FEN 仍能保持優異的交易表現。  
+實驗結果表明，在**高波動市場**（如加密貨幣市場）中，RL 方法在交易決策上能顯著優於人工或傳統配對交易技術，並能夠適應市場變化，提高交易績效。
 
-**結論與影響**：  
-FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供了一種適用於跨市場應用的**遷移學習框架**，並為使用 **Transformer 自注意力機制** 提升金融市場的學習排序模型提供了新方向。
-
-[[中文]](chn/[03]Transfer_Ranking_in_Finance.md) [[英文]](eng/[03]2208.09968v3.pdf)
+[[中文]](chn/[05]Reinforcement_Learning_Pair_Trading.md) [[英文]](eng/[05]jrfm-17-00555.pdf)
 </details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
 
 <!--Machine Learning Strategies-->
 </details>
@@ -163,6 +174,8 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 <!--Market Analysis-->
 <br>
 
+<!-- #region K1 -->
+
 <details>
 <summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
 
@@ -170,6 +183,8 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 
 [[中文]](chn/[35]Factors_Influencing_Cryptocurrency_Prices.md) [[英文]](eng/[12a]vol2-no2-1.pdf)
 </details>
+
+<!-- #endregion -->
 
 <!--Market Analysis-->
 </details>
