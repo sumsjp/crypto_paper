@@ -1,10 +1,10 @@
 [TOC]
 
 <details>
-<summary>## Momentum Trading</summary>
+<summary>Momentum Trading</summary>
 
 <details>
-<summary>### 1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
+<summary>1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
 
 本研究針對加密貨幣市場的 **時間序列動能（Time-Series Momentum）** 和 **橫截面動能（Cross-Sectional Momentum）** 進行了全面分析，並考慮了過去研究所忽略的現實市場因素，如 **交易成本** 和 **日內價格波動**，以更準確評估動能策略的有效性。
 
@@ -19,14 +19,21 @@
 整體而言，本研究指出，時間序列動能策略在加密貨幣市場具備一定的可行性，但 **高風險與市場條件變化使得動能策略的長期穩健性存疑**。此外，由於市場仍處於發展階段，這些結論可能在未來市場成熟時有所改變。
 
 [中文](chn/Time-Series_and_Cross-Sectional_Momentum.md) [英文](eng/[01]%20ssrn-4675565.pdf)
-</summary>
+</details>
 
-</summary>
+<!--Momentum Trading-->
+</details>
 
-## Market Analysis
+<details>
+<summary>Market Analysis</summary>
 
-### 1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero
+<details>
+<summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
 
 本研究探討影響加密貨幣價格的因素，涵蓋比特幣（Bitcoin）、以太坊（Ethereum）、達世幣（Dash）、萊特幣（Litecoin）和門羅幣（Monero），使用 2010-2018 年的每週數據，並透過 **自回歸分佈式滯後模型（ARDL）** 分析短期與長期影響因素。研究結果顯示，加密貨幣價格主要受到 **市場回報率（Market Beta）、交易量（Trading Volume）、市場波動性（Volatility）與吸引力（Attractiveness，如 Google 搜尋趨勢）** 影響。此外，標準普爾 500 指數（S&P 500）對比特幣和以太坊價格在長期內具有微弱影響。短期內市場波動性對價格影響更大，而長期內吸引力成為主要決定因素。本研究為投資者與政策制定者提供了對加密貨幣市場價格決定因素的新見解。
 
 [中文](chn/Factors_Influencing_Cryptocurrency_Prices.md) [英文](eng/[12a]%20vol2-no2-1.pdf)
+</details>
+
+<!--Market Analysis-->
+</details>
