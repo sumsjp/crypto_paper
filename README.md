@@ -1,7 +1,3 @@
-[TOC]
-
----
-
 <details>
 <summary>A. Momentum Trading</summary>
 <!--Momentum Trading-->
@@ -45,7 +41,7 @@
 <!--Grid Trading-->
 </details>
 
-***
+---
 
 <details>
 <summary>D. Arbitrage Trading</summary>
@@ -54,7 +50,7 @@
 <!--Arbitrage Trading-->
 </details>
 
-___
+---
 
 <details>
 <summary>E. Quantitative Trading</summary>
@@ -63,7 +59,7 @@ ___
 <!--Quantitative Trading-->
 </details>
 
-<hr>
+---
 
 <details>
 <summary>F. Machine Learning Strategies</summary>
@@ -79,12 +75,16 @@ ___
 <!--High-Frequency Trading-->
 </details>
 
+---
+
 <details>
 <summary>H. Spread Trading</summary>
 <!--Spread Trading-->
 
 <!--Spread Trading-->
 </details>
+
+---
 
 <details>
 <summary>I. Cross-Currency Strategies</summary>
@@ -93,12 +93,16 @@ ___
 <!--Cross-Currency Strategies-->
 </details>
 
+---
+
 <details>
 <summary>J. Cross-Exchange Strategies</summary>
 <!--Cross-Exchange Strategies-->
 
 <!--Cross-Exchange Strategies-->
 </details>
+
+---
 
 <details>
 <summary>K. Market Analysis</summary>
