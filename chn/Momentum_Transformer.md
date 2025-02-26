@@ -14,11 +14,137 @@
 
 ## 2. **研究角度**
 
+本研究主要從以下幾個角度探討 **Momentum Transformer** 在量化交易中的應用與優勢：
+
+**1. 深度學習在量化交易中的應用**
+   - **傳統動量交易策略的局限性**：傳統時間序列動量（TSMOM）策略基於固定窗口期內的價格變動來決策，但無法靈活適應市場變化，特別是在 regime change（市場政權轉換）期間表現不佳。
+   - **深度學習的引入**：先前的 **Deep Momentum Network (DMN)** 採用了 LSTM 來捕捉市場趨勢，然而 LSTM 主要適用於短期模式識別，難以有效學習長期市場趨勢。因此，本研究嘗試以 **Transformer** 取代 LSTM，以學習更長時間跨度的市場特徵。
+
+**2. Transformer 在時間序列金融數據中的優勢**
+   - **全局依賴性學習**：與 LSTM 的序列結構不同，Transformer 透過 **注意力機制（Attention Mechanism）** 直接與所有過去的時間點建立聯繫，使其更擅長捕捉長期趨勢與市場 regime 變化。
+   - **多頭注意力機制（Multi-Head Attention, MHA）**：Momentum Transformer 透過 MHA 模型同時關注多個時間尺度的市場趨勢，能夠學習短期動量、長期動量及均值回歸等多種交易信號，提升策略的靈活性。
+
+**3. 交易策略的適應性與穩健性**
+   - **市場政權變化（Regime Change）適應能力**：研究關注 Momentum Transformer 在市場極端環境（如 2008 年金融危機與 2020 年 SARS-CoV-2 市場崩盤）中的表現，結果顯示該模型能夠更快適應市場變化，避免 LSTM 常見的「遺忘問題」。
+   - **變化點檢測（Change Point Detection, CPD）**：研究測試了將 CPD 模組與 Momentum Transformer 結合，以增強模型的 regime 切換檢測能力，結果顯示 CPD 模組可進一步提升交易信號的穩健性，降低錯誤交易風險。
+
+**4. 可解釋性（Interpretability）與風險管理**
+   - **可解釋性強化（Variable Selection Network, VSN）**：研究關注 **Momentum Transformer** 的可解釋性，透過 VSN 觀察模型在不同市場條件下所依賴的市場指標（如短期 vs. 長期動量）。
+   - **注意力機制的視覺化**：研究進一步分析了 Transformer 的注意力權重，以理解模型如何決定交易信號，以及它如何在市場變化時重新分配權重。
+
+**5. 交易成本與實際應用**
+   - **交易成本對策略績效的影響**：研究評估了 Momentum Transformer 在不同交易成本環境下的表現，並與 LSTM、傳統 Transformer 進行對比。結果顯示 Momentum Transformer 對交易成本較不敏感，能夠在 C = 3bps（基點）時仍保持良好的夏普比率。
+   - **策略可行性與未來發展**：研究探討該方法是否可擴展至更廣泛的市場應用，如股票交易、跨資產組合及其他因子驅動的交易策略。
+
+**總結**
+本研究主要從 **深度學習、Transformer 時間序列建模、市場適應性、可解釋性、交易成本** 五個角度分析 Momentum Transformer 在量化交易中的應用，並驗證其在風險調整後收益、回撤控制與市場適應性方面的優勢。未來研究可進一步探索該方法在不同市場環境與多因子交易策略中的應用。
+
+
 ## 3. **研究方法**
 
-## 4. **研究結論**
+本研究採用**深度學習模型開發、歷史回測（Backtesting）、可解釋性分析與交易成本評估**的綜合方法來驗證 Momentum Transformer 的有效性。具體方法如下：
 
-### **文獻總結：Momentum Transformer 的結論**
+**1. 模型設計與開發**
+本研究提出了一種新型**Momentum Transformer**，並對比多種基準模型：
+- **基準模型**：
+  - **傳統時間序列動量（TSMOM）策略**：基於歷史收益率進行動量投資。
+  - **LSTM-based Deep Momentum Network (DMN)**：使用 LSTM 進行交易信號生成，代表過去深度學習應用於量化交易的典型方法。
+  - **標準 Transformer**：使用自注意力機制（Self-Attention）進行時序建模。
+  - **不同變體的 Transformer**（Decoder-Only Transformer、Convolutional Transformer、Informer）。
+  - **Decoder-Only Temporal Fusion Transformer (TFT)**：一種混合 LSTM 和 Transformer 的架構，Momentum Transformer 主要基於此架構設計。
+
+- **Momentum Transformer 設計**：
+  - **多頭注意力機制（Multi-Head Attention, MHA）**：學習市場在不同時間尺度上的變化。
+  - **變數選擇網絡（Variable Selection Network, VSN）**：根據市場狀態動態選擇重要因子。
+  - **變化點檢測（Change Point Detection, CPD）**（可選）：用於識別市場 regime 轉換點。
+  - **交易信號生成**：
+    - 透過 Momentum Transformer 預測下一步的持倉權重 \( z_t \)。
+    - 使用 \( tanh \) 激活函數將持倉信號限制在 \( (-1,1) \) 之間。
+
+---
+
+**2. 資料處理與特徵工程**
+- **數據集**：
+  - 使用 **1990–2020 年** **50 種最具流動性的連續期貨合約**（涵蓋**大宗商品、股票指數、固定收益、外匯**）。
+  - 數據來源：**Pinnacle Data Corp CLC Database**。
+  - 期貨合約經**比率調整（Ratio-Adjusted）**，確保價格連續性。
+
+- **特徵工程**：
+  - **標準動量因子**：不同時間尺度的回報率（每日、每月、季度、半年、年度）。
+  - **技術指標**：移動平均收斂背離（MACD）指標。
+  - **市場 regime 檢測**（選擇性）：變化點檢測（CPD）以量化市場 regime 轉換的嚴重程度與位置。
+
+---
+
+**3. 回測設計（Backtesting）**
+- 採用**擴展窗口（Expanding Window）**方法：
+  - **1990–1995 年**：訓練與驗證數據。
+  - **1995–2000 年**：測試集（滾動更新）。
+  - **之後每 5 年擴展訓練窗口並測試下一個 5 年區間，直到 2020 年**。
+
+- **回測指標**：
+  - **收益類指標**：
+    - 年化收益率（Annualized Return）。
+    - 正收益交易比例（% Positive Returns）。
+  - **風險類指標**：
+    - 年化波動率（Annualized Volatility）。
+    - 年化下行波動率（Annualized Downside Deviation）。
+    - 最大回撤（Maximum Drawdown, MDD）。
+  - **風險調整收益**：
+    - 夏普比率（Sharpe Ratio）。
+    - 索提諾比率（Sortino Ratio）。
+    - 卡爾瑪比率（Calmar Ratio）。
+
+- **關鍵測試場景**：
+  - **長期表現（1995–2020）**：衡量 Momentum Transformer 在長期市場中的整體表現。
+  - **近期市場（2015–2020）**：測試 Momentum Transformer 在市場不穩定時的適應能力（包括 2015 年中國股災、2018 年股市波動等）。
+  - **SARS-CoV-2（COVID-19）市場危機（2020）**：測試 Momentum Transformer 在市場崩潰與復甦期間的表現。
+
+---
+
+**4. 可解釋性分析（Interpretability Analysis）**
+- **變數重要性分析（Variable Importance）**：
+  - 透過 **VSN（Variable Selection Network）** 評估 Momentum Transformer 在不同市場條件下的決策機制。
+  - 量化不同市場特徵（短期 vs. 長期動量、MACD、變化點指標）的相對影響力。
+
+- **注意力機制分析（Attention Visualization）**：
+  - 可視化 Momentum Transformer 的多頭注意力權重，解析模型如何根據歷史市場變動做出交易決策。
+  - 研究其對市場轉折點（momentum turning points）的關注程度。
+
+---
+
+**5. 交易成本分析**
+- **模擬不同交易成本（C）對策略績效的影響**：
+  - 設定 C = 0 到 3bps（基點），計算扣除交易成本後的夏普比率變化。
+  - **對比不同模型（LSTM、Transformer、Momentum Transformer）在交易成本下的表現**：
+    - **LSTM 受到交易成本影響最大**，因為它更依賴短期交易。
+    - **Momentum Transformer 由於較長的交易信號持續時間，受交易成本影響較小**。
+
+---
+
+**6. 模型訓練與超參數調整**
+- **優化方法**：
+  - 搭配 **Adam Optimizer** 進行梯度下降（Stochastic Gradient Descent, SGD）。
+  - 直接優化夏普比率作為損失函數（Sharpe Loss Function）。
+  - 早停（Early Stopping）機制防止過擬合。
+
+- **超參數調整（Hyperparameter Tuning）**：
+  - **網格搜索（Grid Search）+ 隨機搜索（Random Search）**。
+  - 針對不同 Transformer 變體（Momentum Transformer、Informer、Convolutional Transformer）進行最優超參數尋找。
+
+---
+
+**總結**
+本研究採用了綜合方法驗證 Momentum Transformer 的有效性：
+1. **基於 Transformer 設計一種新型 Momentum 交易策略**，並與傳統方法（LSTM、TSMOM）進行對比。
+2. **使用歷史期貨數據（1990–2020）進行回測**，檢測模型在不同市場環境下的適應性與穩健性。
+3. **分析可解釋性**，透過注意力機制與變數選擇網絡來解析 Momentum Transformer 如何做出交易決策。
+4. **考慮交易成本的影響**，確保模型的實際應用價值。
+
+這種方法論有助於檢驗 Momentum Transformer 是否能在量化交易領域提供更優越的交易信號，同時保持較高的可解釋性與實用性。
+
+
+## 4. **研究結論**
 
 該研究介紹了一種基於注意力機制的深度學習架構——**Momentum Transformer**，並將其應用於時間序列動量交易策略。以下是主要的研究結論：
 
