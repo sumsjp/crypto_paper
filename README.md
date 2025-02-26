@@ -45,6 +45,8 @@
 <!--Grid Trading-->
 </details>
 
+***
+
 <details>
 <summary>D. Arbitrage Trading</summary>
 <!--Arbitrage Trading-->
@@ -52,12 +54,16 @@
 <!--Arbitrage Trading-->
 </details>
 
+___
+
 <details>
 <summary>E. Quantitative Trading</summary>
 <!--Quantitative Trading-->
 
 <!--Quantitative Trading-->
 </details>
+
+<hr>
 
 <details>
 <summary>F. Machine Learning Strategies</summary>
