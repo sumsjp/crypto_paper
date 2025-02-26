@@ -1,17 +1,11 @@
 A. [Momentum Trading](#A)<br>
-B. [Mean Reversion Trading](#B)
-
-C. [Spread Trading](#C)
-
-D. [Arbitrage Trading](#D)
-
-E. [Quantitative Trading](#E)
-
-F. [Machine Learning Trading](#F)
-
-G. [High-Frequency Trading](#G)
-
-H. [Cryto Currency Market](#H)
+B. [Mean Reversion Trading](#B)<br>
+C. [Spread Trading](#C)<br>
+D. [Arbitrage Trading](#D)<br>
+E. [Quantitative Trading](#E)<br>
+F. [Machine Learning Trading](#F)<br>
+G. [High-Frequency Trading](#G)<br>
+H. [Cryto Currency Market](#H)<br>
 
 ---
 
