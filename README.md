@@ -88,6 +88,8 @@
 <!--Machine Learning Strategies-->
 </details>
 
+---
+
 <details>
 <summary>G. High-Frequency Trading</summary>
 <!--High-Frequency Trading-->
