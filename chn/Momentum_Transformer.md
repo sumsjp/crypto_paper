@@ -61,8 +61,6 @@
     - 透過 Momentum Transformer 預測下一步的持倉權重 \( z_t \)。
     - 使用 \( tanh \) 激活函數將持倉信號限制在 \( (-1,1) \) 之間。
 
----
-
 **2. 資料處理與特徵工程**
 - **數據集**：
   - 使用 **1990–2020 年** **50 種最具流動性的連續期貨合約**（涵蓋**大宗商品、股票指數、固定收益、外匯**）。
@@ -73,8 +71,6 @@
   - **標準動量因子**：不同時間尺度的回報率（每日、每月、季度、半年、年度）。
   - **技術指標**：移動平均收斂背離（MACD）指標。
   - **市場 regime 檢測**（選擇性）：變化點檢測（CPD）以量化市場 regime 轉換的嚴重程度與位置。
-
----
 
 **3. 回測設計（Backtesting）**
 - 採用**擴展窗口（Expanding Window）**方法：
@@ -100,8 +96,6 @@
   - **近期市場（2015–2020）**：測試 Momentum Transformer 在市場不穩定時的適應能力（包括 2015 年中國股災、2018 年股市波動等）。
   - **SARS-CoV-2（COVID-19）市場危機（2020）**：測試 Momentum Transformer 在市場崩潰與復甦期間的表現。
 
----
-
 **4. 可解釋性分析（Interpretability Analysis）**
 - **變數重要性分析（Variable Importance）**：
   - 透過 **VSN（Variable Selection Network）** 評估 Momentum Transformer 在不同市場條件下的決策機制。
@@ -111,16 +105,12 @@
   - 可視化 Momentum Transformer 的多頭注意力權重，解析模型如何根據歷史市場變動做出交易決策。
   - 研究其對市場轉折點（momentum turning points）的關注程度。
 
----
-
 **5. 交易成本分析**
 - **模擬不同交易成本（C）對策略績效的影響**：
   - 設定 C = 0 到 3bps（基點），計算扣除交易成本後的夏普比率變化。
   - **對比不同模型（LSTM、Transformer、Momentum Transformer）在交易成本下的表現**：
     - **LSTM 受到交易成本影響最大**，因為它更依賴短期交易。
     - **Momentum Transformer 由於較長的交易信號持續時間，受交易成本影響較小**。
-
----
 
 **6. 模型訓練與超參數調整**
 - **優化方法**：
@@ -131,8 +121,6 @@
 - **超參數調整（Hyperparameter Tuning）**：
   - **網格搜索（Grid Search）+ 隨機搜索（Random Search）**。
   - 針對不同 Transformer 變體（Momentum Transformer、Informer、Convolutional Transformer）進行最優超參數尋找。
-
----
 
 **總結**
 本研究採用了綜合方法驗證 Momentum Transformer 的有效性：
