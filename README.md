@@ -1,5 +1,4 @@
-A. [Momentum Trading](#A)
-
+A. [Momentum Trading](#A)<br>
 B. [Mean Reversion Trading](#B)
 
 C. [Spread Trading](#C)
