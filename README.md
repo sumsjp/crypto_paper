@@ -21,43 +21,6 @@
 [[中文]](chn/[01]Time-Series_and_Cross-Sectional_Momentum.md) [[英文]](eng/[01]ssrn-4675565.pdf)
 </details>
 
-<details>
-<summary>2. Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
-
-本研究提出了一種基於注意力機制的深度學習架構——**Momentum Transformer**，用於時間序列動量交易策略。我們的方法結合了 Transformer 的全局時間依賴性學習能力與 LSTM（Long Short-Term Memory）的局部模式識別能力，以提升交易決策的準確性和穩健性。 
-
-相較於傳統的 LSTM 架構與基準動量策略，Momentum Transformer 顯示出顯著的性能提升，尤其在市場環境變化（regime change）期間仍能保持卓越表現。該模型透過多頭注意力機制（Multi-Head Attention）學習市場在不同時間尺度上的模式變化，並利用可解釋性網絡（Variable Selection Network, VSN）識別最重要的市場特徵。回測結果表明，Momentum Transformer 在 1995–2020 年期間的風險調整後收益（夏普比率）相較於 LSTM 提升 50%，而在 2015–2020 年市場非平穩時期的提升幅度更達 109%。此外，在 SARS-CoV-2（COVID-19）市場崩盤期間，Momentum Transformer 能夠迅速適應市場轉折，捕捉新趨勢，展現出優異的市場適應能力。
-
-透過引入變化點檢測（Change Point Detection, CPD）模組，我們進一步提升了 Momentum Transformer 的表現，使其在市場 regime 轉變時更加靈活。同時，我們發現 Momentum Transformer 對交易成本較不敏感，即便在較高的交易成本環境下仍能保持穩定的回報表現。
-
-總結而言，Momentum Transformer 透過結合深度學習技術與可解釋性機制，提供了一種更智能、更穩健的動量交易策略，並在市場極端環境下保持競爭力。我們的研究為量化金融中的深度學習應用提供了新的視角，未來可進一步擴展至股票市場、跨資產交易及其他因子驅動的投資策略。
-
-[[中文]](chn/[02]Momentum_Transformer.md) [[英文]](eng/[02]2112.08534v3.pdf)
-</details>
-
-<details>
-<summary>3. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity
-</summary>
-
-現代跨橫斷面交易策略中，結合了**深度學習 (Deep Learning, DL)** 的先進神經網絡模型在歷史數據充足的成熟資產上能夠超越傳統方法。然而，當應用於交易數據有限的標的時，這些模型容易**過擬合 (overfitting)**，導致績效下降。
-
-本研究提出了一種新方法——**Fused Encoder Networks (FEN)**，這是一種混合的參數共享**遷移學習排名模型 (Transfer Ranking Model)**。該模型利用 **編碼器-注意力模塊 (encoder-attention module)** 來融合從大數據集（源數據）中提取的信息，以及針對目標數據集的專用模塊，以提升模型的**泛化能力 (generalizability)**。
-
-**方法與創新**：  
-- 採用 **自注意力機制 (self-attention mechanism)**，允許模型在訓練和推理過程中考慮不同資產間的相互作用。
-- 透過混合學習策略，在源數據集（例如外匯數據）上訓練部分模型，並與針對目標數據（例如加密貨幣）訓練的模組相結合，從而降低過擬合風險。
-
-**實驗與結果**：  
-- 研究將 FEN 應用於 **前十大加密貨幣的動能交易策略**（基於市值排名），並與現有最先進的基準方法進行比較。  
-- 在大多數評估指標上，FEN **優於其他方法**，特別是在風險調整後回報方面，如 **Sharpe Ratio** 顯著提高。  
-- 即使考慮**高交易成本**（如加密貨幣市場的手續費與滑點），FEN 仍能保持優異的交易表現。  
-
-**結論與影響**：  
-FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供了一種適用於跨市場應用的**遷移學習框架**，並為使用 **Transformer 自注意力機制** 提升金融市場的學習排序模型提供了新方向。
-
-[[中文]](chn/[03]Transfer_Ranking_in_Finance.md) [[英文]](eng/[03]2208.09968v3.pdf)
-</details>
-
 <!--Momentum Trading-->
 </details>
 
@@ -112,6 +75,43 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 <summary>F. Machine Learning Strategies</summary>
 <!--Machine Learning Strategies-->
 <br>
+
+<details>
+<summary>1. Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
+
+本研究提出了一種基於注意力機制的深度學習架構——**Momentum Transformer**，用於時間序列動量交易策略。我們的方法結合了 Transformer 的全局時間依賴性學習能力與 LSTM（Long Short-Term Memory）的局部模式識別能力，以提升交易決策的準確性和穩健性。 
+
+相較於傳統的 LSTM 架構與基準動量策略，Momentum Transformer 顯示出顯著的性能提升，尤其在市場環境變化（regime change）期間仍能保持卓越表現。該模型透過多頭注意力機制（Multi-Head Attention）學習市場在不同時間尺度上的模式變化，並利用可解釋性網絡（Variable Selection Network, VSN）識別最重要的市場特徵。回測結果表明，Momentum Transformer 在 1995–2020 年期間的風險調整後收益（夏普比率）相較於 LSTM 提升 50%，而在 2015–2020 年市場非平穩時期的提升幅度更達 109%。此外，在 SARS-CoV-2（COVID-19）市場崩盤期間，Momentum Transformer 能夠迅速適應市場轉折，捕捉新趨勢，展現出優異的市場適應能力。
+
+透過引入變化點檢測（Change Point Detection, CPD）模組，我們進一步提升了 Momentum Transformer 的表現，使其在市場 regime 轉變時更加靈活。同時，我們發現 Momentum Transformer 對交易成本較不敏感，即便在較高的交易成本環境下仍能保持穩定的回報表現。
+
+總結而言，Momentum Transformer 透過結合深度學習技術與可解釋性機制，提供了一種更智能、更穩健的動量交易策略，並在市場極端環境下保持競爭力。我們的研究為量化金融中的深度學習應用提供了新的視角，未來可進一步擴展至股票市場、跨資產交易及其他因子驅動的投資策略。
+
+[[中文]](chn/[02]Momentum_Transformer.md) [[英文]](eng/[02]2112.08534v3.pdf)
+</details>
+
+<details>
+<summary>2. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity
+</summary>
+
+現代跨橫斷面交易策略中，結合了**深度學習 (Deep Learning, DL)** 的先進神經網絡模型在歷史數據充足的成熟資產上能夠超越傳統方法。然而，當應用於交易數據有限的標的時，這些模型容易**過擬合 (overfitting)**，導致績效下降。
+
+本研究提出了一種新方法——**Fused Encoder Networks (FEN)**，這是一種混合的參數共享**遷移學習排名模型 (Transfer Ranking Model)**。該模型利用 **編碼器-注意力模塊 (encoder-attention module)** 來融合從大數據集（源數據）中提取的信息，以及針對目標數據集的專用模塊，以提升模型的**泛化能力 (generalizability)**。
+
+**方法與創新**：  
+- 採用 **自注意力機制 (self-attention mechanism)**，允許模型在訓練和推理過程中考慮不同資產間的相互作用。
+- 透過混合學習策略，在源數據集（例如外匯數據）上訓練部分模型，並與針對目標數據（例如加密貨幣）訓練的模組相結合，從而降低過擬合風險。
+
+**實驗與結果**：  
+- 研究將 FEN 應用於 **前十大加密貨幣的動能交易策略**（基於市值排名），並與現有最先進的基準方法進行比較。  
+- 在大多數評估指標上，FEN **優於其他方法**，特別是在風險調整後回報方面，如 **Sharpe Ratio** 顯著提高。  
+- 即使考慮**高交易成本**（如加密貨幣市場的手續費與滑點），FEN 仍能保持優異的交易表現。  
+
+**結論與影響**：  
+FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供了一種適用於跨市場應用的**遷移學習框架**，並為使用 **Transformer 自注意力機制** 提升金融市場的學習排序模型提供了新方向。
+
+[[中文]](chn/[03]Transfer_Ranking_in_Finance.md) [[英文]](eng/[03]2208.09968v3.pdf)
+</details>
 
 <!--Machine Learning Strategies-->
 </details>
