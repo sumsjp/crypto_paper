@@ -2,6 +2,7 @@
 
 <details>
 <summary>A. Momentum Trading</summary>
+<!--Momentum Trading-->
 
 <details>
 <summary>1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
@@ -25,7 +26,70 @@
 </details>
 
 <details>
-<summary>B. Market Analysis</summary>
+<summary>B. Mean Reversion Trading</summary>
+<!--Mean Reversion Trading-->
+
+<!--Mean Reversion Trading-->
+</details>
+
+<details>
+<summary>C. Grid Trading</summary>
+<!--Grid Trading-->
+
+<!--Grid Trading-->
+</details>
+
+<details>
+<summary>D. Arbitrage Trading</summary>
+<!--Arbitrage Trading-->
+
+<!--Arbitrage Trading-->
+</details>
+
+<details>
+<summary>E. Quantitative Trading</summary>
+<!--Quantitative Trading-->
+
+<!--Quantitative Trading-->
+</details>
+
+<details>
+<summary>F. Machine Learning Strategies</summary>
+<!--Machine Learning Strategies-->
+
+<!--Machine Learning Strategies-->
+</details>
+
+<details>
+<summary>G. High-Frequency Trading</summary>
+<!--High-Frequency Trading-->
+
+<!--High-Frequency Trading-->
+</details>
+
+<details>
+<summary>H. Spread Trading</summary>
+<!--Spread Trading-->
+
+<!--Spread Trading-->
+</details>
+
+<details>
+<summary>I. Cross-Currency Strategies</summary>
+<!--Cross-Currency Strategies-->
+
+<!--Cross-Currency Strategies-->
+</details>
+
+<details>
+<summary>J. Cross-Exchange Strategies</summary>
+<!--Cross-Exchange Strategies-->
+
+<!--Cross-Exchange Strategies-->
+</details>
+
+<details>
+<summary>K. Market Analysis</summary>
 
 <details>
 <summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
