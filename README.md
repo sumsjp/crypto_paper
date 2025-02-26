@@ -1,7 +1,6 @@
-<details>
-<summary>A. Momentum Trading</summary>
-<!--Momentum Trading-->
-<br>
+<!-- #region Momentum Trading -->
+
+A. Momentum Trading
 
 <!-- #region A1 -->
 
@@ -25,8 +24,7 @@
 
 <!-- #endregion -->
 
-<!--Momentum Trading-->
-</details>
+<!-- #endregion -->
 
 ---
 
