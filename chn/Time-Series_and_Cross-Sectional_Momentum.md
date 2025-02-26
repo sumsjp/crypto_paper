@@ -82,9 +82,9 @@
 **3. 統計檢驗方法（Statistical Analysis）**
 - **時間序列回歸（Time-Series Regression）**：
   - 分析市場過去回報與未來回報的關係，檢驗時間序列動能是否存在：
-    $$
+    ```math
     p_{t,t+k} = \alpha + \beta p_{t-j,t} + \epsilon_t
-    $$
+    ```
     其中：
     - $ p_{t,t+k} $ 是持有期間回報的百分位排名。
     - $ p_{t-j,t} $ 是回溯期回報的百分位排名。
