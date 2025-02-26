@@ -1,5 +1,10 @@
+
+
+---
+
 <!-- #region Momentum Trading -->
 
+<a name="A"></a>
 A. Momentum Trading
 
 <!-- #region A1 -->
@@ -28,20 +33,21 @@ A. Momentum Trading
 
 ---
 
-<details>
-<summary>B. Mean Reversion Trading</summary>
+<!-- #region Momentum Trading -->
+
+<a name="B"></a>
+B. Mean Reversion Trading
+
+
+<!-- #endregion -->
+
+---
+
+<a name="A"></a>
+B. Mean Reversion Trading
 <!--Mean Reversion Trading-->
 <br>
 
-<!-- #region X0 -->
-
-<details>
-<summary></summary>
-
-[[中文]](chn) [[英文]](eng)
-</details>
-
-<!-- #endregion -->
 
 <!--Mean Reversion Trading-->
 </details>
@@ -196,3 +202,13 @@ F. Machine Learning Strategies
 
 <!--Market Analysis-->
 </details>
+
+<!-- #region X0 -->
+
+<details>
+<summary></summary>
+
+[[中文]](chn) [[英文]](eng)
+</details>
+
+<!-- #endregion -->
