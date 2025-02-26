@@ -25,7 +25,7 @@
 </div></details>
 
 <details>
-<summary>B. Market Analysis</summary><div style="margin-left: 20px;">
+<summary>B. Market Analysis2</summary><div style="margin-left: 20px;">
 
 <details>
 <summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
