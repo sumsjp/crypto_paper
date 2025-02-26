@@ -1,7 +1,7 @@
 <details>
 <summary>A. Momentum Trading</summary>
 <!--Momentum Trading-->
-
+<br>
 <details>
 <summary>1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
 
@@ -34,14 +34,7 @@
 [中文](chn/Momentum_Transformer.md) [英文](eng/[02]2112.08534v3.pdf)
 </details>
 
-
 <!--Momentum Trading-->
-</details>
-
-<details>
-<summary></summary>
-
-[中文](chn) [英文](eng)
 </details>
 
 ---
@@ -49,6 +42,10 @@
 <details>
 <summary>B. Mean Reversion Trading</summary>
 <!--Mean Reversion Trading-->
+
+<details>
+<summary></summary>
+</details>
 
 <!--Mean Reversion Trading-->
 </details>
