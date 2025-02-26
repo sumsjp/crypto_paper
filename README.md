@@ -1,6 +1,8 @@
 [TOC]
 
-<hr><details>
+---
+
+<details>
 <summary>A. Momentum Trading</summary>
 <!--Momentum Trading-->
 
@@ -25,14 +27,18 @@
 <!--Momentum Trading-->
 </details>
 
-<hr><details>
+---
+
+<details>
 <summary>B. Mean Reversion Trading</summary>
 <!--Mean Reversion Trading-->
 
 <!--Mean Reversion Trading-->
 </details>
 
-<hr><details>
+---
+
+<details>
 <summary>C. Grid Trading</summary>
 <!--Grid Trading-->
 
