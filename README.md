@@ -17,7 +17,7 @@
 
 整體而言，本研究指出，時間序列動能策略在加密貨幣市場具備一定的可行性，但 **高風險與市場條件變化使得動能策略的長期穩健性存疑**。此外，由於市場仍處於發展階段，這些結論可能在未來市場成熟時有所改變。
 
-[中文](chn/Time-Series_and_Cross-Sectional_Momentum.md) [英文](eng/[01]ssrn-4675565.pdf)
+[[中文]](chn/Time-Series_and_Cross-Sectional_Momentum.md) [[英文]](eng/[01]ssrn-4675565.pdf)
 </details>
 
 <details>
