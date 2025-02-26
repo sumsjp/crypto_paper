@@ -82,7 +82,8 @@
 **3. 統計檢驗方法（Statistical Analysis）**
 - **時間序列回歸（Time-Series Regression）**：
   - 分析市場過去回報與未來回報的關係，檢驗時間序列動能是否存在：
-    $$p_{t,t+k} = \alpha + \beta p_{t-j,t} + \epsilon_t$$
+    
+    $p_{t,t+k} = \alpha + \beta p_{t-j,t} + \epsilon_t$
     
     其中：
     - $p_{t,t+k}$ 是持有期間回報的百分位排名。
@@ -91,13 +92,13 @@
 
 - **橫截面回歸（Cross-Sectional Regression）**：
   - 檢驗個別加密貨幣的過去回報是否能預測其未來回報：
-    ```math
-    k_{i,t,t+k} = \alpha + \beta k_{i,t-j,t} + e_{i,t}
-    ```
+    
+    $k_{i,t,t+k} = \alpha + \beta k_{i,t-j,t} + e_{i,t}$
+
     其中：
-    - ```math k_{i,t,t+k} ``` 是個別貨幣的持有期間回報排名。
-    - \( k_{i,t-j,t} \) 是回溯期回報排名。
-    - 若 **\(\beta > 0\)**，代表橫截面動能效應存在；若 **\(\beta < 0\)**，則表示價格反轉效應（Reversal）。
+    - $k_{i,t,t+k}$ 是個別貨幣的持有期間回報排名。
+    - $k_{i,t-j,t}$ 是回溯期回報排名。
+    - 若 **$\beta > 0$**，代表橫截面動能效應存在；若 **$\beta < 0$**，則表示價格反轉效應（Reversal）。
 
 - **因素模型回歸（Factor Model Regression）**：
   - 測試時間序列動能是否可由現有因子模型解釋：
@@ -108,9 +109,9 @@
       - 橫截面過度反應（Cross-Sectional Overreaction, CS-CO）
       - 時間序列過度反應（Time-Series Overreaction, TS-CO）
   - 透過回歸檢測哪些因素對動能報酬有顯著影響：
-    \[
-    R_t = \alpha + \beta_1 MKT_t + \beta_2 SIZE_t + \beta_3 MOM_t + \beta_4 CS\text{-}CO_t + \beta_5 TS\text{-}CO_t + \epsilon_t
-    \]
+
+    $R_t = \alpha + \beta_1 MKT_t + \beta_2 SIZE_t + \beta_3 MOM_t + \beta_4 CS\text{-}CO_t + \beta_5 TS\text{-}CO_t + \epsilon_t$
+
     - **結果**：時間序列動能主要受 **過度反應因子（TS-CO）** 影響，而橫截面動能較難用傳統因子模型解釋。
 
 ---
