@@ -79,8 +79,7 @@
 
 ---
 
-<details>
-<summary>F. Machine Learning Strategies</summary>
+F. Machine Learning Strategies
 <!--Machine Learning Strategies-->
 <br>
 
@@ -125,7 +124,7 @@
 <!-- #endregion -->
 
 <!--Machine Learning Strategies-->
-</details>
+
 
 ---
 
