@@ -147,6 +147,24 @@
 <a name="S4"></a>
 ## 4. **研究結果**
 
+**1. Momentum Transformer 相較於基準模型的表現**
+Momentum Transformer 透過 Transformer 的注意力機制，克服 LSTM 在長期記憶與市場 regime 變化時的缺陷，表現顯著提升：
+- 與 LSTM 相比，Momentum Transformer **夏普比率（Sharpe Ratio）提升 50%**（1995-2020），在 2015-2020 期間則提升 **109%**。
+- 在 2015-2020 年的市場非平穩（non-stationary）期間，Momentum Transformer 仍能維持穩定獲利。
+- 在 SARS-CoV-2 市場崩盤與復甦期間，Momentum Transformer 相較於其他 Transformer 架構表現更為穩健。
+
+**2. 解釋能力與市場適應性**
+Momentum Transformer 透過注意力機制，使交易決策更具解釋性：
+- 注意力權重圖顯示，模型可自動識別**市場 regime 變化**，例如 SARS-CoV-2 危機時的**市場崩盤與牛市轉折點**。
+- **變數重要性分析** 顯示，模型能夠根據不同市場條件，自適應地調整動能與均值回歸策略的組合。
+- **結合變點檢測（CPD）**，Momentum Transformer 可識別市場 regime 轉變，進一步提升交易決策的穩健性。
+
+**3. 交易成本影響分析**
+Momentum Transformer 在考慮交易成本後仍能維持穩定表現：
+- **在 2015-2020 期間，考慮 3bps 交易成本後，Momentum Transformer 仍能維持正向報酬**，相較於 LSTM，其表現衰退幅度較小。
+- Momentum Transformer 主要受益於**長期趨勢識別能力**，避免頻繁交易帶來的成本影響。
+- 在商品期貨（Commodities）交易方面，Momentum Transformer 即使在交易成本達 3bps 時，仍能維持 **1.23** 的夏普比率。
+
 
 <a name="S5"></a>
 ## 5. **研究結論**

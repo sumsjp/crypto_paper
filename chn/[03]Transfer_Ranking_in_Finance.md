@@ -205,6 +205,26 @@ FEN 模型主要包含兩個編碼器：
 <a name="S4"></a>
 ## 4. **研究結果**
 
+本研究提出 **Fused Encoder Networks (FEN)**，這是一種**轉移排名（Transfer Ranking, TR）**模型，主要針對**橫截面動能（Cross-Sectional Momentum, CSM）**策略在數據有限的情況下進行優化。研究表明，FEN 在加密貨幣市場上的應用顯著提升了策略表現，特別是在 **夏普比率（Sharpe Ratio）**、風險管理和交易成本影響等方面均優於傳統基準模型。
+
+**1. FEN 在加密貨幣市場的優勢**
+- **相較於傳統動能策略（1-week Returns, 1WR）**，FEN **將夏普比率提升了三倍**。
+- **相較於最好的基準模型（Self-Attention Ranker, SAR）**，FEN **將夏普比率提高了 50%**。
+- FEN 擁有較低的波動率（Volatility）、最大回撤（Max Drawdown）和下行風險（Downside Deviation），顯示其在風險管理方面的優勢。
+- **即使在高交易成本（最高 29bps）的情境下，FEN 仍能維持正向的風險調整後報酬**，顯示其適合應用於交易成本高的加密貨幣市場。
+
+**2. 轉移學習（Transfer Learning）提升模型泛化能力**
+- 本研究透過**轉移學習**，將外匯市場（FX）數據作為**來源數據（Source Dataset）**，並將其學習到的特徵應用於**目標市場（Target Dataset）**（即加密貨幣）。
+- **相比於傳統的參數共享方法（SAR+ps）**，FEN 採用了雙編碼器（Dual Encoder）架構，使模型能夠靈活地結合來自**來源市場**與**目標市場**的資訊，以增強預測能力。
+
+**3. FEN 的排名能力優於基準模型**
+- **在排名準確度（NDCG@2）評估中，FEN 僅次於 MLP（多層感知機），排名第二**。
+- 進一步分析顯示，當 FEN 在某次再平衡中排名準確度低於 MLP 時，其收益僅略低於 MLP；但當 FEN 排名準確度高於 MLP 時，FEN 的收益顯著高於 MLP。
+
+**4. 自注意力機制（Self-Attention）學習市場關鍵事件**
+- 透過**注意力熱圖（Attention Heatmap）**，FEN 顯示能夠識別市場**風險轉移（Risk-Off）**與**特定市場事件**：
+  - 例如 **2021 年 Elon Musk 的推文影響 Dogecoin（DOGE）價格**時，FEN 的注意力顯示 DOGE 欄位的權重顯著提高。
+  - **2021 年 5 月中國政府對加密貨幣的監管措施**，FEN 亦能夠在注意力機制中識別影響範圍較廣的市場動盪。
 
 
 <a name="S5"></a>
