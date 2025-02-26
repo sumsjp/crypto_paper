@@ -123,6 +123,7 @@
   - 針對不同 Transformer 變體（Momentum Transformer、Informer、Convolutional Transformer）進行最優超參數尋找。
 
 **總結**
+
 本研究採用了綜合方法驗證 Momentum Transformer 的有效性：
 1. **基於 Transformer 設計一種新型 Momentum 交易策略**，並與傳統方法（LSTM、TSMOM）進行對比。
 2. **使用歷史期貨數據（1990–2020）進行回測**，檢測模型在不同市場環境下的適應性與穩健性。
