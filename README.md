@@ -81,7 +81,6 @@
 
 F. Machine Learning Strategies
 <!--Machine Learning Strategies-->
-<br>
 
 <!-- #region F1 -->
 
