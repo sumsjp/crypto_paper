@@ -18,7 +18,7 @@
 
 整體而言，本研究指出，時間序列動能策略在加密貨幣市場具備一定的可行性，但 **高風險與市場條件變化使得動能策略的長期穩健性存疑**。此外，由於市場仍處於發展階段，這些結論可能在未來市場成熟時有所改變。
 
-[[中文]](chn/Time-Series_and_Cross-Sectional_Momentum.md) [[英文]](eng/[01]ssrn-4675565.pdf)
+[[中文]](chn/[01]Time-Series_and_Cross-Sectional_Momentum.md) [[英文]](eng/[01]ssrn-4675565.pdf)
 </details>
 
 <details>
@@ -32,7 +32,30 @@
 
 總結而言，Momentum Transformer 透過結合深度學習技術與可解釋性機制，提供了一種更智能、更穩健的動量交易策略，並在市場極端環境下保持競爭力。我們的研究為量化金融中的深度學習應用提供了新的視角，未來可進一步擴展至股票市場、跨資產交易及其他因子驅動的投資策略。
 
-[[中文]](chn/Momentum_Transformer.md) [[英文]](eng/[02]2112.08534v3.pdf)
+[[中文]](chn/[02]Momentum_Transformer.md) [[英文]](eng/[02]2112.08534v3.pdf)
+</details>
+
+<details>
+<summary>3. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity
+</summary>
+
+現代跨橫斷面交易策略中，結合了**深度學習 (Deep Learning, DL)** 的先進神經網絡模型在歷史數據充足的成熟資產上能夠超越傳統方法。然而，當應用於交易數據有限的標的時，這些模型容易**過擬合 (overfitting)**，導致績效下降。
+
+本研究提出了一種新方法——**Fused Encoder Networks (FEN)**，這是一種混合的參數共享**遷移學習排名模型 (Transfer Ranking Model)**。該模型利用 **編碼器-注意力模塊 (encoder-attention module)** 來融合從大數據集（源數據）中提取的信息，以及針對目標數據集的專用模塊，以提升模型的**泛化能力 (generalizability)**。
+
+**方法與創新**：  
+- 採用 **自注意力機制 (self-attention mechanism)**，允許模型在訓練和推理過程中考慮不同資產間的相互作用。
+- 透過混合學習策略，在源數據集（例如外匯數據）上訓練部分模型，並與針對目標數據（例如加密貨幣）訓練的模組相結合，從而降低過擬合風險。
+
+**實驗與結果**：  
+- 研究將 FEN 應用於 **前十大加密貨幣的動能交易策略**（基於市值排名），並與現有最先進的基準方法進行比較。  
+- 在大多數評估指標上，FEN **優於其他方法**，特別是在風險調整後回報方面，如 **Sharpe Ratio** 顯著提高。  
+- 即使考慮**高交易成本**（如加密貨幣市場的手續費與滑點），FEN 仍能保持優異的交易表現。  
+
+**結論與影響**：  
+FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供了一種適用於跨市場應用的**遷移學習框架**，並為使用 **Transformer 自注意力機制** 提升金融市場的學習排序模型提供了新方向。
+
+[[中文]](chn/[03]Transfer_Ranking_in_Finance.md) [[英文]](eng/[03]2208.09968v3.pdf)
 </details>
 
 <!--Momentum Trading-->
@@ -145,7 +168,7 @@
 
 本研究探討影響加密貨幣價格的因素，涵蓋比特幣（Bitcoin）、以太坊（Ethereum）、達世幣（Dash）、萊特幣（Litecoin）和門羅幣（Monero），使用 2010-2018 年的每週數據，並透過 **自回歸分佈式滯後模型（ARDL）** 分析短期與長期影響因素。研究結果顯示，加密貨幣價格主要受到 **市場回報率（Market Beta）、交易量（Trading Volume）、市場波動性（Volatility）與吸引力（Attractiveness，如 Google 搜尋趨勢）** 影響。此外，標準普爾 500 指數（S&P 500）對比特幣和以太坊價格在長期內具有微弱影響。短期內市場波動性對價格影響更大，而長期內吸引力成為主要決定因素。本研究為投資者與政策制定者提供了對加密貨幣市場價格決定因素的新見解。
 
-[[中文]](chn/Factors_Influencing_Cryptocurrency_Prices.md) [[英文]](eng/[12a]vol2-no2-1.pdf)
+[[中文]](chn/[35]Factors_Influencing_Cryptocurrency_Prices.md) [[英文]](eng/[12a]vol2-no2-1.pdf)
 </details>
 
 <!--Market Analysis-->
