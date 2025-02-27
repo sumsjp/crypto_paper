@@ -4,9 +4,9 @@
 4. [研究結果](#S4)
 5. [研究結論](#S5)
 
-# 
+# (2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs
 
-<a name="S1">(2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs</a>
+<a name="S1"></a>
 ## 1. **摘要**
 
 
