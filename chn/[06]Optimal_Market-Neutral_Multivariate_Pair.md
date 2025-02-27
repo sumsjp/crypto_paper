@@ -81,24 +81,11 @@
         - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
         - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
         - **最小化投資風險（Minimizing Risk）**： 
-
-$$
-\min \sum_{i=1}^{n}
-W_i \cdot COV_i 
-\,\odot\,
-\begin{bmatrix}
-  1 & -1 \\
-  -1 & 1
-\end{bmatrix}
-\cdot
-W_i'
-$$
-        $\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙ \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} \cdot W'_n$
-        $\min \sum_{i=1}^{n} W_i \cdot COV_i \,\odot \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} \cdot W_i'$
+        ![min-sum-formula](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle%20%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20W_i%20%5Ccdot%20COV_i%20%5Codot%20%5Cbegin%7Bbmatrix%7D%201%20%26%20-1%20%5C%5C%20-1%20%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Ccdot%20W_i%27)
         - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
         - 風險調整參數 **$λ$（風險偏好調節）**：
         - 投資者可通過 **$λ$** 來調整 **風險承受能力**，數值越大，代表越保守的投資策略。
-
+    
     2. **約束條件（Constraints）**
         - **交易權重限制**：
         - 每筆交易的**多頭（long）和空頭（short）部位加總不得超過 100%**，以確保資金合理配置。
@@ -113,12 +100,12 @@ $$
         - **牛市（Bull Market）**：2021 年 1 月 - 2022 年 1 月  
         - **熊市（Bear Market）**：2022 年 1 月 - 2023 年 1 月  
         - **完整市場週期（Full-Cycle Market）**：2021 年 1 月 - 2022 年 10 月  
-
+    
     2. **交易績效指標（Performance Metrics）**
         - **年化收益率（Annualized Return）**：計算策略在不同市場條件下的盈利能力。
         - **夏普比率（Sharpe Ratio）**：衡量投資組合的風險調整回報（Risk-Adjusted Return）。
         - **盈虧比（Win/Loss Ratio）**：計算獲利交易與虧損交易的比率，以評估策略的穩定性。
-
+    
     3. **交易行為分析**
         - **交易頻率（Trade Frequency）**：比較 OTT 方法與傳統距離方法（DM）的交易頻率。
         - **持倉時間（Holding Time）**：計算每筆交易的平均持有時間，以評估策略的流動性。
@@ -132,7 +119,7 @@ $$
         - $λ = 1$（平衡型）  
         - $λ = 2$（低風險、低回報）  
         - 比較 OTT 方法在不同交易時間間隔（1 分鐘、5 分鐘、60 分鐘）下的表現。
-
+    
     2. **跨市場適用性**
         - 測試 OTT 方法在不同加密貨幣市場（BTC、SOL）上的表現，驗證其可擴展性。
 
