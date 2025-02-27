@@ -81,7 +81,9 @@
         - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_i \cdot (EP_i ⊙ [1, -1])'$
             - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
         - **最小化投資風險（Minimizing Risk）**： $\min \sum_{i=1}^{n} W_i \cdot COV_i \odot$ 
-        $$\begin{bmatrix}A1 &A2 & A3\\A4 & A5 & A6 \end{bmatrix}$$
+        ```math
+        \begin{bmatrix}A1 &A2 & A3\\A4 & A5 & A6 \end{bmatrix}
+        ```
         $\cdot W_i'$
             - 其中， $COV_i$ 為交易貨幣對的協方差矩陣。
         - 風險調整參數 **$λ$（風險偏好調節）**：
