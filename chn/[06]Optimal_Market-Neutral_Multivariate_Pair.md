@@ -63,7 +63,7 @@
     1. **開倉與平倉規則**
         - 透過歷史數據計算貨幣對之間的**價格價差（Spread）**，當價差偏離均值超過一定標準差時，觸發交易信號。
         - **開倉條件（Opening Position）**：  
-            - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
+        - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
         - **平倉條件（Closing Position）**：  
             - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
 
@@ -78,12 +78,9 @@
     為了確保市場中立性，研究使用**雙目標凸優化（Bi-objective Convex Optimization）**來分配資金，達到**最大化回報**與**最小化風險**的目標。
 
     1. **目標函數（Objective Function）**
-        - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
+        - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_i \cdot (EP_i ⊙ [1, -1])'$
             - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
-        - **最小化投資風險（Minimizing Risk）**： 
-        ![min-sum-formula](
-  https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle%20%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20W_i%20%5Ccdot%20COV_i%20%5Codot%20%5Cbegin%7Bbmatrix%7D%201%20%26%20-1%5C%5C%20-1%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Ccdot%20W_i%27
-)
+        - **最小化投資風險（Minimizing Risk）**： $\min \sum_{i=1}^{n} W_i \cdot COV_i \odot \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} \cdot W_i'$
             - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
         - 風險調整參數 **$λ$（風險偏好調節）**：
             - 投資者可通過 **$λ$** 來調整 **風險承受能力**，數值越大，代表越保守的投資策略。
