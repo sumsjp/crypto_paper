@@ -50,53 +50,49 @@
 
 本研究採用了**數量金融（Quantitative Finance）**與**最佳化技術（Optimization Techniques）**，並通過歷史數據回測來驗證所提出的**最佳交易技術（Optimal Trading Technique, OTT）**。其核心方法包括以下幾個步驟：
 
-**1. 資產篩選與交易對選擇（Screening & Asset Selection）**
+1. **資產篩選與交易對選擇（Screening & Asset Selection）**
+    1. **資產選擇條件**
+        - 研究選擇**法幣貨幣（USD、CAD、GBP、EUR）與加密貨幣（ETH）**作為交易標的，構建套利交易的資產池（Trading Bucket）。
+        - 通過歷史數據分析，篩選出價格變動**高度相關（high correlation）**且**具有協整關係（cointegration）**的資產組合，以確保交易對的套利機會。
+    2. **統計檢定方法**
+        - **皮爾遜相關係數（Pearson Correlation Coefficient）**：檢測貨幣之間的價格關聯性，確保所選資產之間的價格變動模式相似。
+        - **Engle–Granger 協整檢定（Engle–Granger Cointegration Test）**：確保貨幣價格的**長期均值回歸（mean reversion）**特性，以提高套利機會的穩定性。
 
-    **1. 資產選擇條件**
-    - 研究選擇**法幣貨幣（USD、CAD、GBP、EUR）與加密貨幣（ETH）**作為交易標的，構建套利交易的資產池（Trading Bucket）。
-    - 通過歷史數據分析，篩選出價格變動**高度相關（high correlation）**且**具有協整關係（cointegration）**的資產組合，以確保交易對的套利機會。
+2. **交易信號與交易執行（Trading Signals & Execution）**
 
-    **2. 統計檢定方法**
-    - **皮爾遜相關係數（Pearson Correlation Coefficient）**：檢測貨幣之間的價格關聯性，確保所選資產之間的價格變動模式相似。
-    - **Engle–Granger 協整檢定（Engle–Granger Cointegration Test）**：確保貨幣價格的**長期均值回歸（mean reversion）**特性，以提高套利機會的穩定性。
-
-**2. 交易信號與交易執行（Trading Signals & Execution）**
-
-    **1. 開倉與平倉規則**
+    1. **開倉與平倉規則**
     - 透過歷史數據計算貨幣對之間的**價格價差（Spread）**，當價差偏離均值超過一定標準差時，觸發交易信號。
     - **開倉條件（Opening Position）**：  
     - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
     - **平倉條件（Closing Position）**：  
     - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
 
-    **2. 標準化與異常偵測**
+    2. **標準化與異常偵測**
     - **Z-score 標準化處理**：  
     - 計算**價格價差的標準分數（z-score）**，並根據設定的標準差閾值（開倉與平倉閾值）決定是否進場或退場。
     - **閾值優化（Threshold Optimization）**：
     - 透過歷史數據進行網格搜索（Grid Search）來確定最優的開倉與平倉標準差閾值。
 
-**3. 最佳化投資組合配置（Portfolio Optimization）**
+3. **最佳化投資組合配置（Portfolio Optimization）**
+
 為了確保市場中立性，研究使用**雙目標凸優化（Bi-objective Convex Optimization）**來分配資金，達到**最大化回報**與**最小化風險**的目標。
 
-    **(1) 目標函數（Objective Function）**
-    - **最大化預期收益（Maximizing Expected Profit）**：
-    $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
-    - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
-    - **最小化投資風險（Minimizing Risk）**：$\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙
-    \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} 
-    \cdot W'_n$
-    - 其中，$COV_n$ 為交易貨幣對的協方差矩陣。
+    1. **目標函數（Objective Function）**
+        - **最大化預期收益（Maximizing Expected Profit）**：  $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
+        - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
+        - **最小化投資風險（Minimizing Risk）**：$\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙
+          \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}     \cdot W'_n$
+        - 其中，$COV_n$ 為交易貨幣對的協方差矩陣。
+        - 風險調整參數 **$λ$（風險偏好調節）**：
+        - 投資者可通過 **$λ$** 來調整**風險承受能力**，數值越大，代表越保守的投資策略。
 
-    - 風險調整參數 **$λ$（風險偏好調節）**：
-    - 投資者可通過 **$λ$** 來調整**風險承受能力**，數值越大，代表越保守的投資策略。
-
-    **(2) 約束條件（Constraints）**
-    - **交易權重限制**：
-    - 每筆交易的**多頭（long）和空頭（short）部位加總不得超過 100%**，以確保資金合理配置。
-    - **市場中立性條件**：
-    - 所有貨幣交易的**買入（long）與賣出（short）數量需相等**，避免淨敞口風險（Net Exposure Risk）。
-    - **交易成本調整**：
-    - **考量交易成本（Transaction Cost）**，避免過度交易影響收益。
+    2. **約束條件（Constraints）**
+        - **交易權重限制**：
+        - 每筆交易的**多頭（long）和空頭（short）部位加總不得超過 100%**，以確保資金合理配置。
+        - **市場中立性條件**：
+        - 所有貨幣交易的**買入（long）與賣出（short）數量需相等**，避免淨敞口風險（Net Exposure Risk）。
+        - **交易成本調整**：
+        - **考量交易成本（Transaction Cost）**，避免過度交易影響收益。
 
 **4. 歷史數據回測（Backtesting & Performance Evaluation）**
 
@@ -105,27 +101,27 @@
     - **熊市（Bear Market）**：2022 年 1 月 - 2023 年 1 月  
     - **完整市場週期（Full-Cycle Market）**：2021 年 1 月 - 2022 年 10 月  
 
-    **(1) 交易績效指標（Performance Metrics）**
-    - **年化收益率（Annualized Return）**：計算策略在不同市場條件下的盈利能力。
-    - **夏普比率（Sharpe Ratio）**：衡量投資組合的風險調整回報（Risk-Adjusted Return）。
-    - **盈虧比（Win/Loss Ratio）**：計算獲利交易與虧損交易的比率，以評估策略的穩定性。
+    1. **交易績效指標（Performance Metrics）**
+        - **年化收益率（Annualized Return）**：計算策略在不同市場條件下的盈利能力。
+        - **夏普比率（Sharpe Ratio）**：衡量投資組合的風險調整回報（Risk-Adjusted Return）。
+        - **盈虧比（Win/Loss Ratio）**：計算獲利交易與虧損交易的比率，以評估策略的穩定性。
 
-    **(2) 交易行為分析**
-    - **交易頻率（Trade Frequency）**：比較 OTT 方法與傳統距離方法（DM）的交易頻率。
-    - **持倉時間（Holding Time）**：計算每筆交易的平均持有時間，以評估策略的流動性。
-    - **交易成本影響（Impact of Transaction Costs）**：比較不同交易成本條件下的淨收益。
+    2. **交易行為分析**
+        - **交易頻率（Trade Frequency）**：比較 OTT 方法與傳統距離方法（DM）的交易頻率。
+        - **持倉時間（Holding Time）**：計算每筆交易的平均持有時間，以評估策略的流動性。
+        - **交易成本影響（Impact of Transaction Costs）**：比較不同交易成本條件下的淨收益。
 
 **5. 敏感性分析（Sensitivity Analysis）**
 
-    **(1) 參數調整**
-    - 測試不同 **風險調整參數 \( λ \)** 下的績效：
-    - $λ = 0.5$（高風險、高回報）  
-    - $λ = 1$（平衡型）  
-    - $λ = 2$（低風險、低回報）  
-    - 比較 OTT 方法在不同交易時間間隔（1 分鐘、5 分鐘、60 分鐘）下的表現。
+    1. **參數調整**
+        - 測試不同 **風險調整參數 $λ$** 下的績效：
+        - $λ = 0.5$（高風險、高回報）  
+        - $λ = 1$（平衡型）  
+        - $λ = 2$（低風險、低回報）  
+        - 比較 OTT 方法在不同交易時間間隔（1 分鐘、5 分鐘、60 分鐘）下的表現。
 
-    **(2) 跨市場適用性**
-    - 測試 OTT 方法在不同加密貨幣市場（BTC、SOL）上的表現，驗證其可擴展性。
+    2. **跨市場適用性**
+        - 測試 OTT 方法在不同加密貨幣市場（BTC、SOL）上的表現，驗證其可擴展性。
 
 **總結**
 本研究透過數據驅動的方法，結合數量金融、機率統計與數學優化技術，設計了一種**市場中立的多變量配對交易策略**。  
