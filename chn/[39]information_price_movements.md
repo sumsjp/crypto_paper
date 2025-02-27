@@ -174,7 +174,7 @@
     \end{bmatrix}
     $
 
-  - 其中 **$A(L), B(L), C(L), D(L)$** 是時間滯後（lag）運算符，$\epsilon_{it}$, $\epsilon_{jt}$ 為誤差項。
+  - 其中 **$A(L), B(L), C(L), D(L)$** 是時間滯後（lag）運算符， $\epsilon_{it}$, $\epsilon_{jt}$ 為誤差項。
 
 - **Geweke 反饋測度計算**：
   - **即時反饋（Contemporaneous Feedback, $F_{i \leftrightarrow j}$）**：
