@@ -80,11 +80,10 @@
     1. **目標函數（Objective Function）**
         - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
         - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
-        - **最小化投資風險（Minimizing Risk）**：$\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙
-          \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}     \cdot W'_n$
-        - 其中，$COV_n$ 為交易貨幣對的協方差矩陣。
+        - **最小化投資風險（Minimizing Risk）**：$\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙ \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}     \cdot W'_n$
+        - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
         - 風險調整參數 **$λ$（風險偏好調節）**：
-        - 投資者可通過 **$λ$** 來調整**風險承受能力**，數值越大，代表越保守的投資策略。
+        - 投資者可通過 **$λ$** 來調整 **風險承受能力**，數值越大，代表越保守的投資策略。
 
     2. **約束條件（Constraints）**
         - **交易權重限制**：
@@ -96,7 +95,7 @@
 
 **4. 歷史數據回測（Backtesting & Performance Evaluation）**
 
-    為了驗證 OTT 方法的可行性，研究對 2020-2022 年間的歷史數據進行回測，並選擇不同市場條件進行測試：
+    1. 為了驗證 OTT 方法的可行性，研究對 2020-2022 年間的歷史數據進行回測，並選擇不同市場條件進行測試：
         - **牛市（Bull Market）**：2021 年 1 月 - 2022 年 1 月  
         - **熊市（Bear Market）**：2022 年 1 月 - 2023 年 1 月  
         - **完整市場週期（Full-Cycle Market）**：2021 年 1 月 - 2022 年 10 月  
