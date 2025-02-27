@@ -63,15 +63,15 @@
     1. **開倉與平倉規則**
         - 透過歷史數據計算貨幣對之間的**價格價差（Spread）**，當價差偏離均值超過一定標準差時，觸發交易信號。
         - **開倉條件（Opening Position）**：  
-        - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
+            - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
         - **平倉條件（Closing Position）**：  
-        - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
+            - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
 
     2. **標準化與異常偵測**
         - **Z-score 標準化處理**：  
-        - 計算**價格價差的標準分數（z-score）**，並根據設定的標準差閾值（開倉與平倉閾值）決定是否進場或退場。
+            - 計算**價格價差的標準分數（z-score）**，並根據設定的標準差閾值（開倉與平倉閾值）決定是否進場或退場。
         - **閾值優化（Threshold Optimization）**：
-        - 透過歷史數據進行網格搜索（Grid Search）來確定最優的開倉與平倉標準差閾值。
+            - 透過歷史數據進行網格搜索（Grid Search）來確定最優的開倉與平倉標準差閾值。
 
 3. **最佳化投資組合配置（Portfolio Optimization）**
 
@@ -79,20 +79,22 @@
 
     1. **目標函數（Objective Function）**
         - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
-        - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
+            - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
         - **最小化投資風險（Minimizing Risk）**： 
-        ![min-sum-formula](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle%20%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20W_i%20%5Ccdot%20COV_i%20%5Codot%20%5Cbegin%7Bbmatrix%7D%201%20%26%20-1%20%5C%5C%20-1%20%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Ccdot%20W_i%27)
-        - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
+        ![min-sum-formula](
+  https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle%20%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20W_i%20%5Ccdot%20COV_i%20%5Codot%20%5Cbegin%7Bbmatrix%7D%201%20%26%20-1%5C%5C%20-1%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Ccdot%20W_i%27
+)
+            - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
         - 風險調整參數 **$λ$（風險偏好調節）**：
-        - 投資者可通過 **$λ$** 來調整 **風險承受能力**，數值越大，代表越保守的投資策略。
+            - 投資者可通過 **$λ$** 來調整 **風險承受能力**，數值越大，代表越保守的投資策略。
     
     2. **約束條件（Constraints）**
         - **交易權重限制**：
-        - 每筆交易的**多頭（long）和空頭（short）部位加總不得超過 100%**，以確保資金合理配置。
+            - 每筆交易的**多頭（long）和空頭（short）部位加總不得超過 100%**，以確保資金合理配置。
         - **市場中立性條件**：
-        - 所有貨幣交易的**買入（long）與賣出（short）數量需相等**，避免淨敞口風險（Net Exposure Risk）。
+            - 所有貨幣交易的**買入（long）與賣出（short）數量需相等**，避免淨敞口風險（Net Exposure Risk）。
         - **交易成本調整**：
-        - **考量交易成本（Transaction Cost）**，避免過度交易影響收益。
+            - **考量交易成本（Transaction Cost）**，避免過度交易影響收益。
 
 **4. 歷史數據回測（Backtesting & Performance Evaluation）**
 
