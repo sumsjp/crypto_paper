@@ -47,7 +47,7 @@ B. Mean Reversion Trading
 <!-- #region B1 -->
 
 <details>
-<summary>(2022) The Feasibility of Grid Trading Approach for Bitcoin Based on Backtesting</summary>
+<summary>1. (2022) The Feasibility of Grid Trading Approach for Bitcoin Based on Backtesting</summary>
 
 當前，以比特幣為代表的加密貨幣吸引了投資者的廣泛關注。比特幣的本質與法定貨幣或傳統金融資產不同，其高波動性導致比特幣交易市場存在較大的潛在金融風險。因此，研究比特幣市場的波動性具有重要的現實意義。本研究探討了網格交易策略在高波動性市場（如比特幣市場）中的可行性與有效性。  
 
