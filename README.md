@@ -45,6 +45,21 @@ A. Momentum Trading
 <a name="B"></a>
 B. Mean Reversion Trading
 
+<!-- #region B1 -->
+
+<details>
+<summary>(2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary>
+
+本研究提出了一種創新的套利方法，用於多變量配對交易（Multivariate Pair Trading），並將其稱為最佳交易技術（Optimal Trading Technique, OTT）。該方法利用一組與加密貨幣掛鉤的法定貨幣（fiat currency bucket）來監測和同時挖掘交易機會。為了解決來自多個交易信號的數量衝突，研究設計了一種**雙目標凸優化（bi-objective convex optimization）**方法，以平衡投資者對盈利和風險的偏好。本方法包含可調整的參數，如波動懲罰（volatility penalties）和交易閾值（action thresholds），以適應不同風險承受能力的投資者。
+
+在 2020 至 2022 年的歷史數據回測中（涵蓋牛市和熊市），OTT 方法實現了年化盈利率 15.49%，並在後疫情時期對主要加密貨幣進行的額外測試中，驗證了該模型的穩健性與有效性。與傳統的「距離方法（Distance Method, DM）」相比，OTT 方法更具優勢，因為它能夠避免持有高波動性的中間加密貨幣，並且不需要借貸來進行做空交易（shorting）。此外，該套利策略提供了一種新的交易視角，不依賴於外部市場的變化，而是通過資產之間的價差變動來獲取利潤。
+
+然而，本研究亦強調加密貨幣投資的高風險性，市場波動劇烈且可能帶來潛在損失。因此，投資者在應用該策略時應謹慎評估風險，並充分理解市場條件對交易結果的影響。
+
+[[中文]](chn/[06]Optimal_Market-Neutral_Multivariate_Pair.md) [[英文]](eng/[06]2405.15461v5.pdf)
+</details>
+
+<!-- #endregion -->
 
 <!-- #endregion -->
 
