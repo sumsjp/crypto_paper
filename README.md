@@ -56,7 +56,7 @@ C. Arbitrage Trading
 <!-- #region C1 -->
 
 <details>
-<summary>(2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary>
+<summary>1. (2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary>
 
 本研究提出了一種創新的套利方法，用於多變量配對交易（Multivariate Pair Trading），並將其稱為最佳交易技術（Optimal Trading Technique, OTT）。該方法利用一組與加密貨幣掛鉤的法定貨幣（fiat currency bucket）來監測和同時挖掘交易機會。為了解決來自多個交易信號的數量衝突，研究設計了一種**雙目標凸優化（bi-objective convex optimization）**方法，以平衡投資者對盈利和風險的偏好。本方法包含可調整的參數，如波動懲罰（volatility penalties）和交易閾值（action thresholds），以適應不同風險承受能力的投資者。
 
@@ -71,7 +71,7 @@ C. Arbitrage Trading
 <!-- #region C2 -->
 
 <details>
-<summary>(2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs</summary>
+<summary>2. (2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs</summary>
 
 **配對交易（Pairs Trading）**是一種廣為人知的**演算法交易策略**，利用兩個或多個資產之間的**歷史價格關係**，當此關係出現異常變化時，即觸發交易信號，並在價格關係回歸正常時平倉以獲取套利收益。在**去中心化的加密貨幣市場**中，配對交易策略可以帶來潛在的套利機會，主要包括**交易所間套利（Exchange-to-Exchange Arbitrage）**和**統計套利（Statistical Arbitrage）**。然而，基於交易所間套利的統計套利策略**風險較高且實施困難**，相比之下，純統計套利策略風險較低，仍然具有顯著的獲利潛力。  
 
