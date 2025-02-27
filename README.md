@@ -269,6 +269,20 @@ G. Cryto Currency Market
 </details>
 <!-- #endregion -->
 
+<!-- #region G3 -->
+<details>
+<summary>3. (2018) Information Transmission Between Cryptocurrencies: Does Bitcoin Rule the Cryptocurrency World?</summary><br>
+
+**比特幣（Bitcoin）、萊特幣（Litecoin）、瑞波幣（Ripple）、以太坊（Ethereum）和比特幣現金（Bitcoin Cash）**之間的信息傳播，分析它們之間的方向性、強度和持續性。研究採用**向量自回歸（VAR）模型**，並計算**Geweke 反饋測度**與**廣義脈衝響應函數**。  
+
+結果顯示，大部分信息傳播是**當日發生的（即同一天內）**，而滯後影響較少。與傳統認知不同，**比特幣並未主導信息流**，反而是其他加密貨幣（尤其是萊特幣）對比特幣的價格變動有較大的滯後影響。此外，在較新的樣本（2017-2018年）中，比特幣對市場衝擊有**過度反應**，並在次日進行修正。  
+
+這些發現顯示，比特幣雖然在市值和交易量上具領先地位，但在信息傳播方面並不佔據主導地位。本研究對於理解加密貨幣市場的信息流動特性，以及不同貨幣之間的相互影響，具有重要意義。
+
+[[中文]](chn/[38]Info_Transmission_Crypto.md) [[英文]](eng/[38]27_07_2018_332-1024-4-PB.pdf)
+</details>
+<!-- #endregion -->
+
 <!-- #endregion -->
 ---
 
