@@ -75,10 +75,10 @@
 
 3. **最佳化投資組合配置（Portfolio Optimization）**
 
-為了確保市場中立性，研究使用**雙目標凸優化（Bi-objective Convex Optimization）**來分配資金，達到**最大化回報**與**最小化風險**的目標。
+    為了確保市場中立性，研究使用**雙目標凸優化（Bi-objective Convex Optimization）**來分配資金，達到**最大化回報**與**最小化風險**的目標。
 
     1. **目標函數（Objective Function）**
-        - **最大化預期收益（Maximizing Expected Profit）**：  $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
+        - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
         - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
         - **最小化投資風險（Minimizing Risk）**：$\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙
           \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}     \cdot W'_n$
@@ -97,16 +97,16 @@
 **4. 歷史數據回測（Backtesting & Performance Evaluation）**
 
     為了驗證 OTT 方法的可行性，研究對 2020-2022 年間的歷史數據進行回測，並選擇不同市場條件進行測試：
-    - **牛市（Bull Market）**：2021 年 1 月 - 2022 年 1 月  
-    - **熊市（Bear Market）**：2022 年 1 月 - 2023 年 1 月  
-    - **完整市場週期（Full-Cycle Market）**：2021 年 1 月 - 2022 年 10 月  
+        - **牛市（Bull Market）**：2021 年 1 月 - 2022 年 1 月  
+        - **熊市（Bear Market）**：2022 年 1 月 - 2023 年 1 月  
+        - **完整市場週期（Full-Cycle Market）**：2021 年 1 月 - 2022 年 10 月  
 
-    1. **交易績效指標（Performance Metrics）**
+    2. **交易績效指標（Performance Metrics）**
         - **年化收益率（Annualized Return）**：計算策略在不同市場條件下的盈利能力。
         - **夏普比率（Sharpe Ratio）**：衡量投資組合的風險調整回報（Risk-Adjusted Return）。
         - **盈虧比（Win/Loss Ratio）**：計算獲利交易與虧損交易的比率，以評估策略的穩定性。
 
-    2. **交易行為分析**
+    3. **交易行為分析**
         - **交易頻率（Trade Frequency）**：比較 OTT 方法與傳統距離方法（DM）的交易頻率。
         - **持倉時間（Holding Time）**：計算每筆交易的平均持有時間，以評估策略的流動性。
         - **交易成本影響（Impact of Transaction Costs）**：比較不同交易成本條件下的淨收益。
