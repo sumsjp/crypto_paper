@@ -52,24 +52,24 @@
 
 **1. 資產篩選與交易對選擇（Screening & Asset Selection）**
 
-    **(1) 資產選擇條件**
+    **1. 資產選擇條件**
     - 研究選擇**法幣貨幣（USD、CAD、GBP、EUR）與加密貨幣（ETH）**作為交易標的，構建套利交易的資產池（Trading Bucket）。
     - 通過歷史數據分析，篩選出價格變動**高度相關（high correlation）**且**具有協整關係（cointegration）**的資產組合，以確保交易對的套利機會。
 
-    **(2) 統計檢定方法**
+    **2. 統計檢定方法**
     - **皮爾遜相關係數（Pearson Correlation Coefficient）**：檢測貨幣之間的價格關聯性，確保所選資產之間的價格變動模式相似。
     - **Engle–Granger 協整檢定（Engle–Granger Cointegration Test）**：確保貨幣價格的**長期均值回歸（mean reversion）**特性，以提高套利機會的穩定性。
 
 **2. 交易信號與交易執行（Trading Signals & Execution）**
 
-    **(1) 開倉與平倉規則**
+    **1. 開倉與平倉規則**
     - 透過歷史數據計算貨幣對之間的**價格價差（Spread）**，當價差偏離均值超過一定標準差時，觸發交易信號。
     - **開倉條件（Opening Position）**：  
     - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
     - **平倉條件（Closing Position）**：  
     - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
 
-    **(2) 標準化與異常偵測**
+    **2. 標準化與異常偵測**
     - **Z-score 標準化處理**：  
     - 計算**價格價差的標準分數（z-score）**，並根據設定的標準差閾值（開倉與平倉閾值）決定是否進場或退場。
     - **閾值優化（Threshold Optimization）**：
