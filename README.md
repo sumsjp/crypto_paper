@@ -1,11 +1,10 @@
 A. [Momentum Trading](#A)<br>
 B. [Mean Reversion Trading](#B)<br>
-C. [Spread Trading](#C)<br>
-D. [Arbitrage Trading](#D)<br>
-E. [Quantitative Trading](#E)<br>
-F. [Machine Learning Trading](#F)<br>
-G. [High-Frequency Trading](#G)<br>
-H. [Cryto Currency Market](#H)<br>
+C. [Arbitrage Trading](#C)<br>
+D. [Quantitative Trading](#D)<br>
+E. [Machine Learning Trading](#E)<br>
+F. [High-Frequency Trading](#F)<br>
+G. [Cryto Currency Market](#G)<br>
 
 ---
 
@@ -65,20 +64,10 @@ B. Mean Reversion Trading
 
 ---
 
-<!-- #region Spread Trading -->
-
-<a name="C"></a>
-C. Spread Trading
-
-
-<!-- #endregion -->
-
----
-
 <!-- #region Arbitrage Trading -->
 
-<a name="D"></a>
-D. Arbitrage Trading
+<a name="C"></a>
+C. Arbitrage Trading
 
 
 <!-- #endregion -->
@@ -87,8 +76,8 @@ D. Arbitrage Trading
 
 <!-- #region Quantitative Trading -->
 
-<a name="E"></a>
-E. Quantitative Trading
+<a name="D"></a>
+D. Quantitative Trading
 
 
 <!-- #endregion -->
@@ -97,10 +86,10 @@ E. Quantitative Trading
 
 <!-- #region Machine Learning Trading -->
 
-<a name="F"></a>
-F. Machine Learning Trading
+<a name="E"></a>
+E. Machine Learning Trading
 
-<!-- #region F1 -->
+<!-- #region E1 -->
 
 <details>
 <summary>1. (2022) Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
@@ -118,7 +107,7 @@ F. Machine Learning Trading
 
 <!-- #endregion -->
 
-<!-- #region F2 -->
+<!-- #region E2 -->
 
 <details>
 <summary>2. (2023) Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary>
@@ -144,7 +133,7 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 
 <!-- #endregion -->
 
-<!-- #region F3 -->
+<!-- #region E3 -->
 
 <details>
 <summary>3. (2024) Reinforcement Learning Pair Trading: A Dynamic Scaling Approach</summary>
@@ -168,8 +157,8 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 
 <!-- #region High-Frequency Trading -->
 
-<a name="G"></a>
-G. High-Frequency Trading
+<a name="F"></a>
+F. High-Frequency Trading
 
 
 <!-- #endregion -->
@@ -178,10 +167,10 @@ G. High-Frequency Trading
 
 <!-- #region Cryto Currency Market -->
 
-<a name="H"></a>
-H. Cryto Currency Market
+<a name="G"></a>
+G. Cryto Currency Market
 
-<!-- #region H1 -->
+<!-- #region G1 -->
 
 <details>
 <summary>1. (2018) Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
@@ -193,7 +182,7 @@ H. Cryto Currency Market
 
 <!-- #endregion -->
 
-<!-- #region H2 -->
+<!-- #region G2 -->
 
 <details>
 <summary>2. (2022) Cryptocurrencies: from characteristics to behaviours</summary>
