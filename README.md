@@ -4,7 +4,7 @@ C. [Arbitrage Trading](#C)<br>
 D. [Quantitative Trading](#D)<br>
 E. [Machine Learning Trading](#E)<br>
 F. [High-Frequency Trading](#F)<br>
-G. [Cryto Currency Market](#G)<br>
+G. [Market Study](#G)<br>
 
 ---
 
@@ -242,10 +242,10 @@ F. High-Frequency Trading
 
 ---
 
-<!-- #region Cryto Currency Market -->
+<!-- #region Market Study -->
 
 <a name="G"></a>
-G. Cryto Currency Market
+G. Market Study
 
 <!-- #region G1 -->
 
@@ -280,6 +280,30 @@ G. Cryto Currency Market
 這些發現顯示，比特幣雖然在市值和交易量上具領先地位，但在信息傳播方面並不佔據主導地位。本研究對於理解加密貨幣市場的信息流動特性，以及不同貨幣之間的相互影響，具有重要意義。
 
 [[中文]](chn/[38]Info_Transmission_Crypto.md) [[英文]](eng/[38]27_07_2018_332-1024-4-PB.pdf)
+</details>
+<!-- #endregion -->
+
+<!-- #region G4 -->
+<details>
+<summary>4. (2017) Where is the information on USD/Bitcoin hourly price movements?</summary><br>
+
+本研究分析 **美元/比特幣（USD/BTC）市場的價格發現過程**，涵蓋 **Mt.Gox 破產後（2014年3月1日）至 Bitfinex 遭駭事件後（2016年11月30日）** 的市場變化。研究運用 **Geweke 反饋測度（Geweke feedback measures）**，以**每小時回報率**進行雙變量估計，探討市場資訊傳遞機制。
+
+**主要發現**：
+1. **市場資訊傳遞效率**：四大主要交易所（Bitfinex、Bitstamp、BTC-e、ItBit）間資訊可在 **一小時內傳遞完畢**，但較小的交易所存在滯後反應。
+2. **市場資訊流向**：
+   - **Bitfinex 是主要的價格資訊發送者**，其滯後反饋占市場資訊流的 **18.29%**，市場對 Bitfinex 的資訊回饋僅 **0.60%**。
+   - 其他較小的交易所（minor exchanges）對市場資訊的影響微乎其微，反應也較為延遲。
+3. **交易量與市場整合度**：
+   - **交易量越大，市場資訊傳遞越快**。
+   - **主要交易所的波動性有助於價格資訊傳遞**，而較小交易所的波動性可能引入市場雜訊。
+4. **資訊傳遞模式**：
+   - 即時反饋（contemporaneous feedback）是資訊傳遞的主要機制，約占 **75% 以上**。
+   - 小型交易所主要透過滯後反饋（lagged feedback）獲取資訊，顯示它們是「**衛星交易所（satellite exchanges）**」。
+
+本研究顯示，比特幣市場的價格發現過程主要由交易量最大且波動性較高的交易所主導，提供了對**比特幣市場微觀結構**的深入理解，並對**監管機構、交易策略開發者和市場參與者**具有參考價值。
+
+[[中文]](chn/[39]information_price_movements.md) [[英文]](eng/[39]CeBERwp2017_05.pdf)
 </details>
 <!-- #endregion -->
 
