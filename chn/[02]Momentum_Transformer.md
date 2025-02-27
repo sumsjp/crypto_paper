@@ -5,7 +5,7 @@
 5. [研究結論](#S5)
 
 
-# Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+# (2022) Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
 
 
 <a name="S1"></a>

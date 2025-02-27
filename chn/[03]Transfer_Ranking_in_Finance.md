@@ -5,7 +5,7 @@
 5. [研究結論](#S5)
 
 
-# Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity
+# (2023) Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity
 
 
 <a name="S1"></a>

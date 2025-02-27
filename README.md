@@ -17,7 +17,7 @@ A. Momentum Trading
 <!-- #region A1 -->
 
 <details>
-<summary>1. Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
+<summary>1. (2024) Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
 
 本研究針對加密貨幣市場的 **時間序列動能（Time-Series Momentum）** 和 **橫截面動能（Cross-Sectional Momentum）** 進行了全面分析，並考慮了過去研究所忽略的現實市場因素，如 **交易成本** 和 **日內價格波動**，以更準確評估動能策略的有效性。
 
@@ -103,7 +103,7 @@ F. Machine Learning Trading
 <!-- #region F1 -->
 
 <details>
-<summary>1. Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
+<summary>1. (2022) Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
 
 本研究提出了一種基於注意力機制的深度學習架構——**Momentum Transformer**，用於時間序列動量交易策略。我們的方法結合了 Transformer 的全局時間依賴性學習能力與 LSTM（Long Short-Term Memory）的局部模式識別能力，以提升交易決策的準確性和穩健性。 
 
@@ -121,7 +121,7 @@ F. Machine Learning Trading
 <!-- #region F2 -->
 
 <details>
-<summary>2. Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary>
+<summary>2. (2023) Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary>
 
 現代跨橫斷面交易策略中，結合了**深度學習 (Deep Learning, DL)** 的先進神經網絡模型在歷史數據充足的成熟資產上能夠超越傳統方法。然而，當應用於交易數據有限的標的時，這些模型容易**過擬合 (overfitting)**，導致績效下降。
 
@@ -147,7 +147,7 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 <!-- #region F3 -->
 
 <details>
-<summary>3. Reinforcement Learning Pair Trading: A Dynamic Scaling Approach</summary>
+<summary>3. (2024) Reinforcement Learning Pair Trading: A Dynamic Scaling Approach</summary>
 
 加密貨幣是一種基於密碼學的數字資產，其價格極端波動，全球每日交易量約達 **700 億美元**。由於市場的高波動性，使得加密貨幣交易變得極具挑戰性。本研究探討**強化學習（Reinforcement Learning, RL）**是否能夠提升加密貨幣演算法交易的決策能力，並與傳統交易方法進行比較。  
 
@@ -184,11 +184,11 @@ H. Cryto Currency Market
 <!-- #region H1 -->
 
 <details>
-<summary>1. Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
+<summary>1. (2018) Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
 
 本研究探討影響加密貨幣價格的因素，涵蓋比特幣（Bitcoin）、以太坊（Ethereum）、達世幣（Dash）、萊特幣（Litecoin）和門羅幣（Monero），使用 2010-2018 年的每週數據，並透過 **自回歸分佈式滯後模型（ARDL）** 分析短期與長期影響因素。研究結果顯示，加密貨幣價格主要受到 **市場回報率（Market Beta）、交易量（Trading Volume）、市場波動性（Volatility）與吸引力（Attractiveness，如 Google 搜尋趨勢）** 影響。此外，標準普爾 500 指數（S&P 500）對比特幣和以太坊價格在長期內具有微弱影響。短期內市場波動性對價格影響更大，而長期內吸引力成為主要決定因素。本研究為投資者與政策制定者提供了對加密貨幣市場價格決定因素的新見解。
 
-[[中文]](chn/[35]Factors_Influencing_Cryptocurrency_Prices.md) [[英文]](eng/[12a]vol2-no2-1.pdf)
+[[中文]](chn/[35]Factors_Influencing_Cryptocurrency_Prices.md) [[英文]](eng/[35]vol2-no2-1.pdf)
 </details>
 
 <!-- #endregion -->
@@ -196,7 +196,7 @@ H. Cryto Currency Market
 <!-- #region H2 -->
 
 <details>
-<summary>2. Cryptocurrencies: from characteristics to behaviours</summary>
+<summary>2. (2022) Cryptocurrencies: from characteristics to behaviours</summary>
 
 隨著加密貨幣市場的快速發展，其高波動性與缺乏監管的特性使其成為高風險投資工具。本研究探討加密貨幣投資者的特徵、動機與市場行為，並分析金融機構與監管機構對加密貨幣的態度。透過問卷調查與訪談，研究發現投資者可分為兩類：一類主要投資於比特幣等主流貨幣，通常擁有較高收入、較長投資經驗，並對市場有較高信心；另一類則投資於低價替代幣（Altcoins），收入較低，投資時間較短，且獲利與滿意度相對較低。投資者主要關注低交易成本與全球支付的便利性，但也擔憂市場詐騙與監管缺失。大多數投資者認為未來監管將提升市場穩定性與信任度，但對價格影響的看法不一。此外，金融機構普遍對加密貨幣持保守態度，擔憂與非法活動的關聯，但對區塊鏈技術表現出一定興趣。本研究結論顯示，加密貨幣市場雖存在諸多風險，但投資者對其前景仍抱持高度興趣，監管政策的發展將成為影響市場走向的關鍵因素。
 

@@ -4,7 +4,7 @@
 4. [研究結果](#S4)
 5. [研究結論](#S5)
 
-# Reinforcement Learning Pair Trading: A Dynamic Scaling Approach
+# (2024) Reinforcement Learning Pair Trading: A Dynamic Scaling Approach
 
 <a name="S1"></a>
 ## 1. **摘要**

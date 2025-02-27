@@ -4,7 +4,7 @@
 4. [研究結果](#S4)
 5. [研究結論](#S5)
 
-# Cryptocurrencies: from characteristics to behaviours
+# (2022) Cryptocurrencies: from characteristics to behaviours
 
 <a name="S1"></a>
 ## 1. **摘要**

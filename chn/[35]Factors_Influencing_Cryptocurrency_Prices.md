@@ -5,7 +5,7 @@
 5. [研究結論](#S5)
 
 
-# Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litecoin, and Monero
+# (2018) Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litecoin, and Monero
 
 <a name="S1"></a>
 ## 1. **摘要**

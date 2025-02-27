@@ -5,7 +5,7 @@
 5. [研究結論](#S5)
 
 
-# Time-Series and Cross-Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions
+# (2024) Time-Series and Cross-Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions
 
 
 <a name="S1"></a>
