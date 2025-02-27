@@ -83,7 +83,7 @@ C. Arbitrage Trading
 <!-- #region C3 -->
 
 <details>
-<summary>(2024) Optimized pairs-trading strategies in the cryptocurrencies market using genetic algorithms and cointegration</summary>
+<summary>3. (2024) Optimized pairs-trading strategies in the cryptocurrencies market using genetic algorithms and cointegration</summary>
 
 加密資產市場以其高度波動性和風險性而聞名。在此背景下，市場中立型策略（如配對交易策略，Pairs Trading）可能具有一定的應用價值。本文專注於應用配對交易策略，並選取**209種加密資產**（樣本期從**2021年8月1日至2024年1月31日**）進行實證研究。我們結合了**計量經濟學與機器學習技術**，以區別於現有文獻。通過**共整合檢驗**與**誤差修正模型 (ECM)**，我們篩選出**229對適用於配對交易的資產對**。
 
