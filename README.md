@@ -88,7 +88,6 @@ B. Mean Reversion Trading
 C. Arbitrage Trading
 
 <!-- #region C1 -->
-
 <details>
 <summary>1. (2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary><br>
 
@@ -100,7 +99,7 @@ C. Arbitrage Trading
 
 [[中文]](chn/[06]Optimal_Market-Neutral_Multivariate_Pair.md) [[英文]](eng/[06]2405.15461v5.pdf)
 </details>
-
+<!-- #endregion -->
 
 <!-- #region C2 -->
 
@@ -128,7 +127,23 @@ C. Arbitrage Trading
 
 <!-- #endregion -->
 
+<!-- #region C4 -->
+<details>
+<summary>4. (2019) Lead-Lag Relationship between Bitcoin and Ethereum: Evidence from Hourly and Daily Data</summary><br>
 
+### 摘要 (*Summary*)
+
+本研究探討了比特幣 (BTC) 與以太坊 (ETH) 之間的**領先-滯後（Lead-Lag）關係**，以識別這兩種主要加密貨幣的價格領導模式。傳統的市場信息流動研究主要集中在**現貨與期貨市場**的相互影響，而加密貨幣市場的價格傳導機制仍然缺乏深入研究。因此，本研究利用**VECM、Granger 因果檢驗、ARMA、ARDL 及小波相干性分析（Wavelet Coherence）**等多種統計方法，對 2017 年 8 月至 2018 年 9 月期間的**小時與每日數據**進行分析。
+
+主要研究結果顯示：
+1. **比特幣與以太坊之間存在雙向因果關係**，表明兩者在價格變動上互相影響，沒有明顯的單一價格領導者。
+2. **價格發現過程的有效性較高**，使得日內交易者難以利用 BTC 和 ETH 之間的價格變動來獲取套利機會。
+3. **加密貨幣市場內部的價格聯動性明顯**，進一步證實這些資產之間的市場互動關係。
+
+本研究為加密貨幣市場的信息流動與價格形成機制提供了實證證據，對於市場參與者、投資者及監管機構而言，理解這種雙向影響關係有助於優化投資決策並提升市場監管效能。
+
+[[中文]](chn/[37]Lead-Lag_BTC_ETH.md) [[英文]](eng/[37]RIBAFLLRG1.pdf)
+</details>
 <!-- #endregion -->
 
 
@@ -245,7 +260,6 @@ G. Cryto Currency Market
 <!-- #endregion -->
 
 <!-- #region G2 -->
-
 <details>
 <summary>2. (2022) Cryptocurrencies: from characteristics to behaviours</summary><br>
 
@@ -253,17 +267,15 @@ G. Cryto Currency Market
 
 [[中文]](chn/[36]Cryptocurrencies_from_characteristics_to_behaviour.md) [[英文]](eng/[36]Cryptocurrencies_from_characteristics_to_behaviour.pdf)
 </details>
-
 <!-- #endregion -->
 
+<!-- #endregion -->
 ---
 
 <!-- #region X0 -->
-
 <details>
 <summary></summary><br>
 
 [[中文]](chn) [[英文]](eng)
 </details>
-
 <!-- #endregion -->
