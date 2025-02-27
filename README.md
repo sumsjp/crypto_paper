@@ -16,7 +16,7 @@ A. Momentum Trading
 <!-- #region A1 -->
 
 <details>
-<summary>1. (2024) Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary>
+<summary>1. (2024) Time-Series and Cross- Sectional Momentum in the Cryptocurrency Market: A Comprehensive Analysis under Realistic Assumptions</summary><br>
 
 本研究針對加密貨幣市場的 **時間序列動能（Time-Series Momentum）** 和 **橫截面動能（Cross-Sectional Momentum）** 進行了全面分析，並考慮了過去研究所忽略的現實市場因素，如 **交易成本** 和 **日內價格波動**，以更準確評估動能策略的有效性。
 
@@ -47,7 +47,7 @@ B. Mean Reversion Trading
 <!-- #region B1 -->
 
 <details>
-<summary>1. (2022) The Feasibility of Grid Trading Approach for Bitcoin Based on Backtesting</summary>
+<summary>1. (2022) The Feasibility of Grid Trading Approach for Bitcoin Based on Backtesting</summary><br>
 
 當前，以比特幣為代表的加密貨幣吸引了投資者的廣泛關注。比特幣的本質與法定貨幣或傳統金融資產不同，其高波動性導致比特幣交易市場存在較大的潛在金融風險。因此，研究比特幣市場的波動性具有重要的現實意義。本研究探討了網格交易策略在高波動性市場（如比特幣市場）中的可行性與有效性。  
 
@@ -60,7 +60,7 @@ B. Mean Reversion Trading
 <!-- #region B2 -->
 
 <details>
-<summary>2. (2024) Cryptocurrency Market-making: Improving Grid Trading Strategies in Bitcoin</summary>
+<summary>2. (2024) Cryptocurrency Market-making: Improving Grid Trading Strategies in Bitcoin</summary><br>
 
 在不斷變化的加密貨幣市場中，**網格交易策略（Grid Trading）** 已成為促進流動性和穩定性的關鍵工具。本研究分析了 **ByBit 交易所** 上現有的網格交易策略，並探討了 **機器學習模型**（如 **隨機森林**（Random Forest）和 **長短期記憶網絡**（LSTM））對於優化這些策略參數的可行性。此外，研究還引入了一種 **新的避險策略（hedging strategy）**，旨在在降低風險的同時最大化回報。  
 
@@ -90,7 +90,7 @@ C. Arbitrage Trading
 <!-- #region C1 -->
 
 <details>
-<summary>1. (2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary>
+<summary>1. (2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary><br>
 
 本研究提出了一種創新的套利方法，用於多變量配對交易（Multivariate Pair Trading），並將其稱為最佳交易技術（Optimal Trading Technique, OTT）。該方法利用一組與加密貨幣掛鉤的法定貨幣（fiat currency bucket）來監測和同時挖掘交易機會。為了解決來自多個交易信號的數量衝突，研究設計了一種**雙目標凸優化（bi-objective convex optimization）**方法，以平衡投資者對盈利和風險的偏好。本方法包含可調整的參數，如波動懲罰（volatility penalties）和交易閾值（action thresholds），以適應不同風險承受能力的投資者。
 
@@ -105,7 +105,7 @@ C. Arbitrage Trading
 <!-- #region C2 -->
 
 <details>
-<summary>2. (2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs</summary>
+<summary>2. (2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs</summary><br>
 
 **配對交易（Pairs Trading）**是一種廣為人知的**演算法交易策略**，利用兩個或多個資產之間的**歷史價格關係**，當此關係出現異常變化時，即觸發交易信號，並在價格關係回歸正常時平倉以獲取套利收益。在**去中心化的加密貨幣市場**中，配對交易策略可以帶來潛在的套利機會，主要包括**交易所間套利（Exchange-to-Exchange Arbitrage）**和**統計套利（Statistical Arbitrage）**。然而，基於交易所間套利的統計套利策略**風險較高且實施困難**，相比之下，純統計套利策略風險較低，仍然具有顯著的獲利潛力。  
 
@@ -117,7 +117,7 @@ C. Arbitrage Trading
 <!-- #region C3 -->
 
 <details>
-<summary>3. (2024) Optimized pairs-trading strategies in the cryptocurrencies market using genetic algorithms and cointegration</summary>
+<summary>3. (2024) Optimized pairs-trading strategies in the cryptocurrencies market using genetic algorithms and cointegration</summary><br>
 
 加密資產市場以其高度波動性和風險性而聞名。在此背景下，市場中立型策略（如配對交易策略，Pairs Trading）可能具有一定的應用價值。本文專注於應用配對交易策略，並選取**209種加密資產**（樣本期從**2021年8月1日至2024年1月31日**）進行實證研究。我們結合了**計量經濟學與機器學習技術**，以區別於現有文獻。通過**共整合檢驗**與**誤差修正模型 (ECM)**，我們篩選出**229對適用於配對交易的資產對**。
 
@@ -154,7 +154,7 @@ E. Machine Learning Trading
 <!-- #region E1 -->
 
 <details>
-<summary>1. (2022) Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary>
+<summary>1. (2022) Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</summary><br>
 
 本研究提出了一種基於注意力機制的深度學習架構——**Momentum Transformer**，用於時間序列動量交易策略。我們的方法結合了 Transformer 的全局時間依賴性學習能力與 LSTM（Long Short-Term Memory）的局部模式識別能力，以提升交易決策的準確性和穩健性。 
 
@@ -172,7 +172,7 @@ E. Machine Learning Trading
 <!-- #region E2 -->
 
 <details>
-<summary>2. (2023) Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary>
+<summary>2. (2023) Transfer Ranking in Finance: Applications to Cross-Sectional Momentum with Data Scarcity</summary><br>
 
 現代跨橫斷面交易策略中，結合了**深度學習 (Deep Learning, DL)** 的先進神經網絡模型在歷史數據充足的成熟資產上能夠超越傳統方法。然而，當應用於交易數據有限的標的時，這些模型容易**過擬合 (overfitting)**，導致績效下降。
 
@@ -198,7 +198,7 @@ FEN 有效解決了**數據稀缺環境下的金融交易建模問題**，提供
 <!-- #region E3 -->
 
 <details>
-<summary>3. (2024) Reinforcement Learning Pair Trading: A Dynamic Scaling Approach</summary>
+<summary>3. (2024) Reinforcement Learning Pair Trading: A Dynamic Scaling Approach</summary><br>
 
 加密貨幣是一種基於密碼學的數字資產，其價格極端波動，全球每日交易量約達 **700 億美元**。由於市場的高波動性，使得加密貨幣交易變得極具挑戰性。本研究探討**強化學習（Reinforcement Learning, RL）**是否能夠提升加密貨幣演算法交易的決策能力，並與傳統交易方法進行比較。  
 
@@ -235,7 +235,7 @@ G. Cryto Currency Market
 <!-- #region G1 -->
 
 <details>
-<summary>1. (2018) Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary>
+<summary>1. (2018) Factors Influencing Cryptocurrency Prices: Evidence from Bitcoin, Ethereum, Dash, Litcoin, and Monero</summary><br>
 
 本研究探討影響加密貨幣價格的因素，涵蓋比特幣（Bitcoin）、以太坊（Ethereum）、達世幣（Dash）、萊特幣（Litecoin）和門羅幣（Monero），使用 2010-2018 年的每週數據，並透過 **自回歸分佈式滯後模型（ARDL）** 分析短期與長期影響因素。研究結果顯示，加密貨幣價格主要受到 **市場回報率（Market Beta）、交易量（Trading Volume）、市場波動性（Volatility）與吸引力（Attractiveness，如 Google 搜尋趨勢）** 影響。此外，標準普爾 500 指數（S&P 500）對比特幣和以太坊價格在長期內具有微弱影響。短期內市場波動性對價格影響更大，而長期內吸引力成為主要決定因素。本研究為投資者與政策制定者提供了對加密貨幣市場價格決定因素的新見解。
 
@@ -247,7 +247,7 @@ G. Cryto Currency Market
 <!-- #region G2 -->
 
 <details>
-<summary>2. (2022) Cryptocurrencies: from characteristics to behaviours</summary>
+<summary>2. (2022) Cryptocurrencies: from characteristics to behaviours</summary><br>
 
 隨著加密貨幣市場的快速發展，其高波動性與缺乏監管的特性使其成為高風險投資工具。本研究探討加密貨幣投資者的特徵、動機與市場行為，並分析金融機構與監管機構對加密貨幣的態度。透過問卷調查與訪談，研究發現投資者可分為兩類：一類主要投資於比特幣等主流貨幣，通常擁有較高收入、較長投資經驗，並對市場有較高信心；另一類則投資於低價替代幣（Altcoins），收入較低，投資時間較短，且獲利與滿意度相對較低。投資者主要關注低交易成本與全球支付的便利性，但也擔憂市場詐騙與監管缺失。大多數投資者認為未來監管將提升市場穩定性與信任度，但對價格影響的看法不一。此外，金融機構普遍對加密貨幣持保守態度，擔憂與非法活動的關聯，但對區塊鏈技術表現出一定興趣。本研究結論顯示，加密貨幣市場雖存在諸多風險，但投資者對其前景仍抱持高度興趣，監管政策的發展將成為影響市場走向的關鍵因素。
 
@@ -261,7 +261,7 @@ G. Cryto Currency Market
 <!-- #region X0 -->
 
 <details>
-<summary></summary>
+<summary></summary><br>
 
 [[中文]](chn) [[英文]](eng)
 </details>
