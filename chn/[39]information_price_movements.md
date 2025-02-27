@@ -152,7 +152,8 @@
 
 - **數學模型**（VAR 模型）：
   - 設定兩個交易所的價格回報率 **${r_i, r_j}$** 形成一個 **雙變量自回歸（Bivariate Autoregressive, VAR）** 模型：
-    \[
+
+    $
     \begin{bmatrix}
     r_{it} \\
     r_{jt}
@@ -171,8 +172,9 @@
     \epsilon_{it} \\
     \epsilon_{jt}
     \end{bmatrix}
-    \]
-  - 其中 **$A(L), B(L), C(L), D(L)$** 是時間滯後（lag）運算符，$\epsilon_{it}, \epsilon_{jt}$ 為誤差項。
+    $
+
+  - 其中 **$A(L), B(L), C(L), D(L)$** 是時間滯後（lag）運算符，$\epsilon_{it}$, $\epsilon_{jt}$ 為誤差項。
 
 - **Geweke 反饋測度計算**：
   - **即時反饋（Contemporaneous Feedback, $F_{i \leftrightarrow j}$）**：
