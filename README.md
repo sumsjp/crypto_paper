@@ -56,6 +56,25 @@ B. Mean Reversion Trading
 [[中文]](chn/[09]Grid_Trading_Approach.md) [[英文]](eng/[09]eai.18-11-2022.2327164.pdf)
 </details>
 
+
+<!-- #region B2 -->
+
+<details>
+<summary>(2024) Cryptocurrency Market-making: Improving Grid Trading Strategies in Bitcoin</summary>
+
+在不斷變化的加密貨幣市場中，**網格交易策略（Grid Trading）** 已成為促進流動性和穩定性的關鍵工具。本研究分析了 **ByBit 交易所** 上現有的網格交易策略，並探討了 **機器學習模型**（如 **隨機森林**（Random Forest）和 **長短期記憶網絡**（LSTM））對於優化這些策略參數的可行性。此外，研究還引入了一種 **新的避險策略（hedging strategy）**，旨在在降低風險的同時最大化回報。  
+
+透過 **自訂回測系統（backtesting system）** 進行測試，結果顯示：  
+1. **機器學習整合未能顯著優於傳統網格交易方法**，表明在此環境下，機器學習模型的應用仍需進一步探索與改進。  
+2. **新避險策略表現優於單純持有比特幣（holding Bitcoin）**，展現出較高的回報率與風險管理能力。  
+
+本研究為進一步優化網格交易策略、改進特徵工程（feature engineering）、以及在 **即時市場（live market）** 中進行測試提供了理論基礎與實證分析。
+
+[[中文]](chn/[10]Improving_Grid_Trading.md) [[英文]](eng/[10]Cryptocurrency%20Market-making_%20Improving%20Grid%20Trading%20Strategies%20in%20Bitcoin.pdf)
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
 
 
