@@ -153,26 +153,7 @@
 - **數學模型**（VAR 模型）：
   - 設定兩個交易所的價格回報率 **${r_i, r_j}$** 形成一個 **雙變量自回歸（Bivariate Autoregressive, VAR）** 模型：
 
-    $
-    \begin{bmatrix}
-    r_{it} \\
-    r_{jt}
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-    A(L) & B(L) \\
-    C(L) & D(L)
-    \end{bmatrix}
-    \begin{bmatrix}
-    r_{it} \\
-    r_{jt}
-    \end{bmatrix}
-    +
-    \begin{bmatrix}
-    \epsilon_{it} \\
-    \epsilon_{jt}
-    \end{bmatrix}
-    $
+    <img src="https://latex.codecogs.com/svg.latex?\Large%20\begin{bmatrix}%20r_{it}%20\\%20r_{jt}%20\end{bmatrix}%20=%20\begin{bmatrix}%20A(L)%20&%20B(L)%20\\%20C(L)%20&%20D(L)%20\end{bmatrix}%20\begin{bmatrix}%20r_{it}%20\\%20r_{jt}%20\end{bmatrix}%20+%20\begin{bmatrix}%20\epsilon_{it}%20\\%20\epsilon_{jt}%20\end{bmatrix}" title="\Large \begin{bmatrix} r_{it} \\ r_{jt} \end{bmatrix} = \begin{bmatrix} A(L) & B(L) \\ C(L) & D(L) \end{bmatrix} \begin{bmatrix} r_{it} \\ r_{jt} \end{bmatrix} + \begin{bmatrix} \epsilon_{it} \\ \epsilon_{jt} \end{bmatrix}" height="40px" />
 
   - 其中 **$A(L), B(L), C(L), D(L)$** 是時間滯後（lag）運算符， $\epsilon_{it}$, $\epsilon_{jt}$ 為誤差項。
 
