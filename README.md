@@ -44,7 +44,16 @@ A. Momentum Trading
 <a name="B"></a>
 B. Mean Reversion Trading
 
-<!-- #region B1 -->
+<!-- #endregion -->
+
+---
+
+<!-- #region Arbitrage Trading -->
+
+<a name="C"></a>
+C. Arbitrage Trading
+
+<!-- #region C1 -->
 
 <details>
 <summary>(2024) Optimal Market-Neutral Multivariate Pair Trading on the Cryptocurrency Platform</summary>
@@ -59,15 +68,6 @@ B. Mean Reversion Trading
 </details>
 
 <!-- #endregion -->
-
-<!-- #endregion -->
-
----
-
-<!-- #region Arbitrage Trading -->
-
-<a name="C"></a>
-C. Arbitrage Trading
 
 
 <!-- #endregion -->
