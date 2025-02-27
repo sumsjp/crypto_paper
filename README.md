@@ -67,6 +67,19 @@ C. Arbitrage Trading
 [[中文]](chn/[06]Optimal_Market-Neutral_Multivariate_Pair.md) [[英文]](eng/[06]2405.15461v5.pdf)
 </details>
 
+
+<!-- #region C2 -->
+
+<details>
+<summary>(2023) Copula-Based Trading of Cointegrated Cryptocurrency Pairs</summary>
+
+**配對交易（Pairs Trading）**是一種廣為人知的**演算法交易策略**，利用兩個或多個資產之間的**歷史價格關係**，當此關係出現異常變化時，即觸發交易信號，並在價格關係回歸正常時平倉以獲取套利收益。在**去中心化的加密貨幣市場**中，配對交易策略可以帶來潛在的套利機會，主要包括**交易所間套利（Exchange-to-Exchange Arbitrage）**和**統計套利（Statistical Arbitrage）**。然而，基於交易所間套利的統計套利策略**風險較高且實施困難**，相比之下，純統計套利策略風險較低，仍然具有顯著的獲利潛力。  
+
+[[中文]](chn/[07]Copula-Based_Trading.md) [[英文]](eng/[07]WP_wps-202301-0004.pdf)
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
 
 
