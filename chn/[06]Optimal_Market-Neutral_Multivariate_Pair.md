@@ -81,6 +81,18 @@
         - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
         - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
         - **最小化投資風險（Minimizing Risk）**： 
+
+$$
+\min \sum_{i=1}^{n}
+W_i \cdot COV_i 
+\,\odot\,
+\begin{bmatrix}
+  1 & -1 \\
+  -1 & 1
+\end{bmatrix}
+\cdot
+W_i'
+$$
         $\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙ \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} \cdot W'_n$
         $\min \sum_{i=1}^{n} W_i \cdot COV_i \,\odot \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} \cdot W_i'$
         - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
