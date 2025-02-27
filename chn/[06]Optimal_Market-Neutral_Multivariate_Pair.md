@@ -61,17 +61,17 @@
 2. **交易信號與交易執行（Trading Signals & Execution）**
 
     1. **開倉與平倉規則**
-    - 透過歷史數據計算貨幣對之間的**價格價差（Spread）**，當價差偏離均值超過一定標準差時，觸發交易信號。
-    - **開倉條件（Opening Position）**：  
-    - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
-    - **平倉條件（Closing Position）**：  
-    - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
+        - 透過歷史數據計算貨幣對之間的**價格價差（Spread）**，當價差偏離均值超過一定標準差時，觸發交易信號。
+        - **開倉條件（Opening Position）**：  
+        - 當價格差異超過**開倉閾值（open threshold）**，則開設交易頭寸（long/short）。
+        - **平倉條件（Closing Position）**：  
+        - 當價格差異回歸至**平倉閾值（close threshold）**，則關閉交易頭寸，鎖定利潤。
 
     2. **標準化與異常偵測**
-    - **Z-score 標準化處理**：  
-    - 計算**價格價差的標準分數（z-score）**，並根據設定的標準差閾值（開倉與平倉閾值）決定是否進場或退場。
-    - **閾值優化（Threshold Optimization）**：
-    - 透過歷史數據進行網格搜索（Grid Search）來確定最優的開倉與平倉標準差閾值。
+        - **Z-score 標準化處理**：  
+        - 計算**價格價差的標準分數（z-score）**，並根據設定的標準差閾值（開倉與平倉閾值）決定是否進場或退場。
+        - **閾值優化（Threshold Optimization）**：
+        - 透過歷史數據進行網格搜索（Grid Search）來確定最優的開倉與平倉標準差閾值。
 
 3. **最佳化投資組合配置（Portfolio Optimization）**
 
@@ -80,7 +80,7 @@
     1. **目標函數（Objective Function）**
         - **最大化預期收益（Maximizing Expected Profit）**: $\max \sum_{i=1}^{n} W_n \cdot (EP_n ⊙ [1, -1])'$
         - 其中，$W_n$ 是交易資產的權重，$EP_n$ 是預期收益。
-        - **最小化投資風險（Minimizing Risk）**：$\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙ \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}     \cdot W'_n$
+        - **最小化投資風險（Minimizing Risk）**： $\min \sum_{i=1}^{n} W_n \cdot COV_n ⊙ \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix} \cdot W'_n$
         - 其中， $COV_n$ 為交易貨幣對的協方差矩陣。
         - 風險調整參數 **$λ$（風險偏好調節）**：
         - 投資者可通過 **$λ$** 來調整 **風險承受能力**，數值越大，代表越保守的投資策略。
