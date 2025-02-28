@@ -146,6 +146,26 @@ C. Arbitrage Trading
 </details>
 <!-- #endregion -->
 
+<!-- #region C5 -->
+<details>
+<summary>5. (2024) An Improved Algorithm to Identify More Arbitrage Opportunities on Decentralized Exchanges</summary><br>
+
+在去中心化交易所 (DEXs) 中，套利機會主要以**套利迴路 (arbitrage loops)** 和 **非迴路套利 (non-loops arbitrage)** 兩種形式存在。例如，套利迴路指的是從某一幣種出發，經過多次交換後回到原幣種 (如 A → B → … → A)；而非迴路套利則是從一種幣種開始，最終停在不同的幣種 (如 A → B → … → N)。  
+
+目前廣泛使用的 **Moore-Bellman-Ford (MBF) 演算法**（通常與“walk to the root”技術結合）可用於檢測 DEXs（如 Uniswap）的代幣交換圖中的套利迴路。然而，該演算法存在以下限制：
+1. 每次運行只能識別有限數量的套利迴路；
+2. 無法指定套利迴路的起始幣種；
+3. 無法檢測任何兩種指定幣種之間的非迴路套利機會。
+
+為解決這些問題，本研究提出了一種新方法，**結合線圖 (line graph) 和改進的 Moore-Bellman-Ford (MMBF) 演算法**，以增強套利檢測能力。此方法能夠：
+- 在任意指定幣種的情況下，找到至少一條套利迴路；
+- 檢測任何兩個幣種之間的非迴路套利機會。
+
+本研究將該算法應用於 **Uniswap V2**，結果顯示，相較於 MBF 方法，本方法確實發現了更多套利迴路與非迴路套利機會，且部分套利路徑的潛在利潤甚至高達 **百萬美元**，遠超 MBF 方法所發現的套利利潤。此外，研究還對套利路徑長度分佈及套利利潤進行了統計比較，並分析了隨時間變化的套利機會分佈情況。  
+
+[[中文]](chn/[12]Improved_Arbitrage_Decentral_Exchanges.md) [[英文]](eng/[12]2406.16573v1.pdf)
+</details>
+<!-- #endregion -->
 
 <!-- #endregion -->
 
