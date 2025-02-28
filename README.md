@@ -156,6 +156,22 @@ C. Arbitrage Trading
 <a name="D"></a>
 D. Quantitative Trading
 
+<!-- #region D1 -->
+<details>
+<summary>1. Analysis of Different Trading Strategy Applicability to Cryptocurrency Market</summary><br>
+
+由於加密貨幣交易與監管機制尚不成熟，且對不同交易策略的適用性研究較少，因此有必要探討加密貨幣市場的交易策略，以促進市場的健康發展。本研究使用比特幣（BTC）、以太坊（ETH）和萊特幣（LTC）的歷史價格數據，分析並比較**配對交易（Pairs Trading）、動量交易（Momentum Trading）和網格交易（Grid Trading）**的交易特徵，探討其適用性並提出相關建議。  
+
+研究結果表明，不同交易策略適用於不同的市場環境，應根據市場情況合理選擇交易策略：
+- **配對交易** 利用高度相關的加密貨幣對進行套利，其波動性低、收益穩定。  
+- **動量交易** 適用於高波動市場，結合 MACD 和 RSI 指標可提高價格趨勢預測準確性。  
+- **網格交易** 在長期波動劇烈的市場中能獲得穩定回報，但交易頻率較高，應根據幣值與波動性動態調整網格數量與大小。  
+
+本研究為加密貨幣交易策略的選擇與應用提供了實證支持，並建議未來可以透過人工智慧進一步優化交易策略，提高收益與風險管理能力。
+
+[[中文]](chn/[11]Different_Trading_Crypto.md) [[英文]](eng/[11]Analysis_of_Different_Trading_Strategy_Applicabili.pdf)
+</details>
+<!-- #endregion -->
 
 <!-- #endregion -->
 
